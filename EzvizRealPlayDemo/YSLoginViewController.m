@@ -38,6 +38,8 @@
     
     YSMobilePages *mp = [[YSMobilePages alloc] init];
     self.page = mp;
+    [self login];//登录
+
     [mp release];
 }
 
@@ -101,6 +103,9 @@
                                                                                             bundle:nil];
     [self.navigationController pushViewController:controller animated:YES];
     [controller release];
+//    FirstViewController *controller = [[FirstViewController alloc] init];
+//    [self.navigationController pushViewController:controller animated:YES];
+//    [controller release];
 }
 
 - (void)dealloc {

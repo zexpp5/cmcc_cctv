@@ -43,6 +43,8 @@
 		8CC28D3E197BFCE80004BD81 /* playback_playbar_progress.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC28D35197BFCE80004BD81 /* playback_playbar_progress.png */; };
 		8CC28D45197C0C8A0004BD81 /* full_pause_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC28D43197C0C8A0004BD81 /* full_pause_sel.png */; };
 		8CC28D46197C0C8A0004BD81 /* full_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC28D44197C0C8A0004BD81 /* full_pause.png */; };
+		D5D352841B4133E2008A3004 /* home_icon_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5D352831B4133E2008A3004 /* home_icon_01@2x.png */; };
+		D5D3528D1B413779008A3004 /* home_icon_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5D3528C1B413779008A3004 /* home_icon_02@2x.png */; };
 		E30338431991019F00029175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30338421991019F00029175 /* Images.xcassets */; };
 		E30338461991029200029175 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338441991029200029175 /* Default-568h@2x.png */; };
 		E30338471991029200029175 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338451991029200029175 /* Default@2x.png */; };
@@ -243,6 +245,8 @@
 		8CC28D35197BFCE80004BD81 /* playback_playbar_progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_playbar_progress.png; sourceTree = "<group>"; };
 		8CC28D43197C0C8A0004BD81 /* full_pause_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_pause_sel.png; sourceTree = "<group>"; };
 		8CC28D44197C0C8A0004BD81 /* full_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_pause.png; sourceTree = "<group>"; };
+		D5D352831B4133E2008A3004 /* home_icon_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_icon_01@2x.png"; sourceTree = "<group>"; };
+		D5D3528C1B413779008A3004 /* home_icon_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_icon_02@2x.png"; sourceTree = "<group>"; };
 		E30338421991019F00029175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E30338441991029200029175 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "image/Default-568h@2x.png"; sourceTree = "<group>"; };
 		E30338451991029200029175 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "image/Default@2x.png"; sourceTree = "<group>"; };
@@ -632,6 +636,8 @@
 		46D871151942F684000A5753 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D5D3528C1B413779008A3004 /* home_icon_02@2x.png */,
+				D5D352831B4133E2008A3004 /* home_icon_01@2x.png */,
 				E371CAC71A20386500BA9049 /* WIFI */,
 				E371CABB1A20321700BA9049 /* Back_Bnt.png */,
 				E371CABC1A20321700BA9049 /* BackBnt_sel.png */,
@@ -976,6 +982,7 @@
 				E334ADEC1988A01000233190 /* video_record.png in Resources */,
 				E361E4EF1A35A20500974327 /* YSLoginViewController.xib in Resources */,
 				E334ADC41988A01000233190 /* full_loading_logo.png in Resources */,
+				D5D352841B4133E2008A3004 /* home_icon_01@2x.png in Resources */,
 				E371CAE71A20386500BA9049 /* connect2.png in Resources */,
 				E310DEF519F79D410091B10E /* YSShowDeviceCaptureViewController.xib in Resources */,
 				E30338471991029200029175 /* Default@2x.png in Resources */,
@@ -1036,6 +1043,7 @@
 				E334ADE41988A01000233190 /* speech_disable.png in Resources */,
 				E371CAE31A20386500BA9049 /* circle_bg.png in Resources */,
 				E371CAE21A20386500BA9049 /* circle4.png in Resources */,
+				D5D3528D1B413779008A3004 /* home_icon_02@2x.png in Resources */,
 				E371CADD1A20386500BA9049 /* button_red.png in Resources */,
 				E334ADE81988A01000233190 /* talk.png in Resources */,
 				E334ADE31988A01000233190 /* speech.png in Resources */,
@@ -1215,8 +1223,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zexu Lin (658VAC848D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zexu Lin (658VAC848D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EzvizRealPlayDemo/EzvizRealPlayDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1254,8 +1262,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zexu Lin (658VAC848D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zexu Lin (658VAC848D)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EzvizRealPlayDemo/EzvizRealPlayDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

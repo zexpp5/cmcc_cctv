@@ -392,12 +392,15 @@ extern long g_lRealTotleFlux;
     [_realView addTarget:self action:@selector(onRealViewZoomUp:) forEventEX:REALVIEW_EVENT_ZOOMUP];
     [_realView addTarget:self action:@selector(onRealViewZoomOff:) forEventEX:REALVIEW_EVENT_ZOOMOFF];
     [self.view addSubview:_realView];
+//    _realView.backgroundColor = [UIColor blueColor];//颜色
 
     
     int nCtrlViewY = _realView.frame.origin.y + _realView.frame.size.height;
     _ctrlView = [[UIView alloc] initWithFrame:CGRectMake(0, nCtrlViewY, gfScreenWidth, screenSize.height - nCtrlViewY)];
     _ctrlView.backgroundColor = UIColorFromRGB(0xf2eff6, 1.0f);
     [self.view addSubview:_ctrlView];
+    //    _ctrlView.backgroundColor = [UIColor greenColor];//颜色
+
     
     _toolbarBgView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, (_ctrlView.frame.size.height-PLAYBTN_HEIGHT-44)/2, _ctrlView.frame.size.width, PLAYBTN_HEIGHT)];
     _toolbarBgView.backgroundColor = [UIColor clearColor];
@@ -406,12 +409,13 @@ extern long g_lRealTotleFlux;
     _toolbarBgView.contentSize = CGSizeMake(1000, PLAYBTN_HEIGHT);
     _toolbarBgView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleRightMargin;
     [_ctrlView addSubview:_toolbarBgView];
+    //    _toolbarBgView.backgroundColor = [UIColor redColor];//颜色
     
     _toolbarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1000, PLAYBTN_HEIGHT)];
     _toolbarView.backgroundColor = [UIColor clearColor];
     [_toolbarBgView addSubview:_toolbarView];
     
-    _intercomBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, PLAYBTN_HEIGHT, PLAYBTN_HEIGHT)];
+    _intercomBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, PLAYBTN_HEIGHT, PLAYBTN_HEIGHT)];// 1 语音
     [_intercomBtn setBackgroundImage:[UIImage imageNamed:@"talk.png"] forState:UIControlStateNormal];
     [_intercomBtn setBackgroundImage:[UIImage imageNamed:@"talk.png"] forState:UIControlStateHighlighted];
     [_intercomBtn setBackgroundImage:[UIImage imageNamed:@"talk_disable.png"] forState:UIControlStateDisabled];
@@ -421,7 +425,7 @@ extern long g_lRealTotleFlux;
     UIImage * imgCapture = [UIImage imageNamed:@"play-previously.png"];
     _captureBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, PLAYBTN_HEIGHT, PLAYBTN_HEIGHT)];
     [_captureBtn setBackgroundImage:imgCapture forState:UIControlStateNormal];
-    [_captureBtn setBackgroundImage:[UIImage imageNamed:@"play-previously.png"] forState:UIControlStateHighlighted];
+    [_captureBtn setBackgroundImage:[UIImage imageNamed:@"play-previously.png"] forState:UIControlStateHighlighted];//2 图片
     [_captureBtn setBackgroundImage:[UIImage imageNamed:@"previously_disable.png"] forState:UIControlStateDisabled];
     [_captureBtn addTarget:self action:@selector(onClickCaptureBtn) forControlEvents:UIControlEventTouchUpInside];
     [_toolbarView addSubview:_captureBtn];
@@ -430,14 +434,14 @@ extern long g_lRealTotleFlux;
     [_recordBtn addBtnClickEvent:self sel:@selector(onClickRecordBtn)];
     [_toolbarView addSubview:_recordBtn];
     
-    _videoQualityBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, PLAYBTN_HEIGHT, PLAYBTN_HEIGHT)];
+    _videoQualityBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, PLAYBTN_HEIGHT, PLAYBTN_HEIGHT)];//4 流畅按钮
     [_videoQualityBtn setBackgroundImage:[UIImage imageNamed:@"hd.png"] forState:UIControlStateNormal];
     [_videoQualityBtn setBackgroundImage:[UIImage imageNamed:@"hd.png"] forState:UIControlStateHighlighted];
     [_videoQualityBtn addTarget:self action:@selector(onClickVideoQualityBtn) forControlEvents:UIControlEventTouchUpInside];
     [_toolbarView addSubview:_videoQualityBtn];
     
     _ptzCtrlBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, PLAYBTN_HEIGHT, PLAYBTN_HEIGHT)];
-    [_ptzCtrlBtn setBackgroundImage:[UIImage imageNamed:@"play_ptz.png"] forState:UIControlStateNormal];
+    [_ptzCtrlBtn setBackgroundImage:[UIImage imageNamed:@"play_ptz.png"] forState:UIControlStateNormal];//5 云台控制视图
     [_ptzCtrlBtn setBackgroundImage:[UIImage imageNamed:@"play_ptz.png"] forState:UIControlStateHighlighted];
     [_ptzCtrlBtn setBackgroundImage:[UIImage imageNamed:@"play_ptz_disable.png"] forState:UIControlStateDisabled];
     [_ptzCtrlBtn addTarget:self action:@selector(onClickPtzCtrlBtn) forControlEvents:UIControlEventTouchUpInside];
@@ -465,7 +469,7 @@ extern long g_lRealTotleFlux;
     
     nLeft += FS_PLAYBTN_HEIGHT + nBtnSpace;
     _fsRecordBtn = [[RecordingBtnView alloc] initWithFrame:CGRectMake(nLeft, 0, FS_PLAYBTN_HEIGHT, FS_PLAYBTN_HEIGHT)];
-    [_fsRecordBtn setRecordingButtonImage:[UIImage imageNamed:@"full_video_now.png"] highlightImage:[UIImage imageNamed:@"full_video_now_sel.png"]];
+    [_fsRecordBtn setRecordingButtonImage:[UIImage imageNamed:@"full_video_now.png"] highlightImage:[UIImage imageNamed:@"full_video_now_sel.png"]];//3 录像
     [_fsRecordBtn setButtonImage:[UIImage imageNamed:@"full_video.png"] highlightImage:[UIImage imageNamed:@"full_video_sel.png"]];
     [_fsRecordBtn addBtnClickEvent:self sel:@selector(onClickRecordBtn)];
     [_fsToolbarView addSubview:_fsRecordBtn];
@@ -594,7 +598,7 @@ extern long g_lRealTotleFlux;
         [_videoQualityBtn setBackgroundImage:[UIImage imageNamed:@"flunet.png"] forState:UIControlStateHighlighted];
         [_videoQualityBtn setBackgroundImage:[UIImage imageNamed:@"flunet_disable.png"] forState:UIControlStateDisabled];
     }
-    
+    /*
     if (_realState == YSPlayerMsgRealPlaySuccess)
     {
         _captureBtn.enabled = YES;
@@ -647,7 +651,15 @@ extern long g_lRealTotleFlux;
         _shareBtn.enabled = NO;
         _ptzCtrlBtn.enabled = NO;
     }
-    
+    */
+    _captureBtn.enabled = YES;
+    [_recordBtn enableBtn:YES];
+    _mailBtn.enabled = YES;
+    _intercomBtn.enabled = YES;
+    _videoQualityBtn.enabled = YES;
+    _shareBtn.enabled = YES;
+    _ptzCtrlBtn.enabled = YES;
+    [_realView enableZoomView:YES];
     if (!_bRecording)
     {
         [_realView stopRecording];

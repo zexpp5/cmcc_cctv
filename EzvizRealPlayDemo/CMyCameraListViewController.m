@@ -40,7 +40,11 @@ UITableViewDelegate, UIAlertViewDelegate>
 
 @implementation CMyCameraListViewController
 
+{
+    UIButton * largeImageBtn;
+    YSCameraInfo          *cameraInfo;               // 当前正在播放的摄像机信息
 
+}
 #pragma -
 #pragma mark - object
 - (void)dealloc
@@ -82,13 +86,21 @@ UITableViewDelegate, UIAlertViewDelegate>
 {    
     [super viewDidLoad];
     
-    self.navigationItem.title = @"摄像机";
+    self.navigationItem.title = @"我的设备";
+    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
+    //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
+    [leftBtn setBackgroundImage:[UIImage imageNamed:@"home_icon_02"] forState:UIControlStateNormal];
+    [leftBtn addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *lestItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+    self.navigationItem.leftBarButtonItem = lestItem;
+    [lestItem release];
+    
     
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnAddDevice setFrame:CGRectMake(0, 0, 60, 44)];
-    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
-    [btnAddDevice setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    btnAddDevice.titleLabel.font = [UIFont systemFontOfSize:30];
+    [btnAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
+//    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
+    [btnAddDevice setBackgroundImage:[UIImage imageNamed:@"home_icon_01"] forState:UIControlStateNormal];
     [btnAddDevice addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -100,11 +112,30 @@ UITableViewDelegate, UIAlertViewDelegate>
     [_indicator setHidden:YES];
     [_tableView setHidden:YES];
     
+    _tableView.frame = CGRectMake(0, 200, self.view.bounds.size.width, self.view.bounds.size.height-200);
+    [self addLargeImageView];//新加的大图片
+    
+    
     YSMobilePages *mobilePage = [[YSMobilePages alloc] init];
     self.mp = mobilePage;
     [mobilePage release];
 }
-
+-(void)addLargeImageView
+{
+    largeImageBtn =[UIButton buttonWithType:UIButtonTypeCustom];
+    largeImageBtn.frame = CGRectMake(0, 64, self.view.bounds.size.width, 200);
+    [largeImageBtn setTitle:@"直播" forState:UIControlStateNormal];
+    largeImageBtn.backgroundColor = [UIColor grayColor];
+    [largeImageBtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:largeImageBtn];
+}
+-(void)oneTapView//:(UIRotationGestureRecognizer *)sender
+{
+    RealPlayViewController *realPlayController = [[RealPlayViewController alloc] init];
+    realPlayController.cameraInfo = cameraInfo;
+    [self.navigationController pushViewController:realPlayController animated:YES];
+    [realPlayController release];
+}
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -142,6 +173,11 @@ UITableViewDelegate, UIAlertViewDelegate>
     
     UIImage *coverImage = [_coverDict objectForKey:ci.cameraId];
     [cell.coverImgView setImage:coverImage];
+    if (indexPath.row == 0) {
+        [largeImageBtn setImage:coverImage forState:UIControlStateNormal];
+        cameraInfo = cell.cameraInfo;
+        NSLog(@"===显示大图片====");
+    }
     
     return cell;
 }

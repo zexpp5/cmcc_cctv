@@ -400,13 +400,13 @@
 
 - (void)addDevice
 {
-    NSLog(@"WIFI config success. Call add device page");
-    
-    // 中间页
-    [_mp addDevice:self.navigationController
-   withAccessToken:[[YSDemoDataModel sharedInstance] userAccessToken]
-          deviceId:self.strSn
-           safeKey:self.strVerify];
+//    NSLog(@"WIFI config success. Call add device page");
+//    
+//    // 中间页
+//    [_mp addDevice:self.navigationController
+//   withAccessToken:[[YSDemoDataModel sharedInstance] userAccessToken]
+//          deviceId:self.strSn
+//           safeKey:self.strVerify];
 }
 
 
