@@ -384,7 +384,8 @@ extern long g_lRealTotleFlux;
     [_titleView addBackBtnTouchEvent:self action:@selector(onClickBackBtn)];
     
     int nHeight = (int)(gfScreenWidth / _fVideoRate);
-    _realView = [[RealView alloc] initWithFrame:CGRectMake(0, [self navBarHeight], gfScreenWidth, (CGFloat)nHeight)];
+//    _realView = [[RealView alloc] initWithFrame:CGRectMake(0, [self navBarHeight], gfScreenWidth, (CGFloat)nHeight)];
+    _realView = [[RealView alloc] initWithFrame:CGRectMake(0, [self navBarHeight], self.view.bounds.size.width, self.view.bounds.size.height- [self navBarHeight])];
     [_realView addTarget:self action:@selector(onClickPlayBtn:) forEventEX:REALVIEW_EVENT_PLAYBTNTOUCHUPINSIDE];
     [_realView addTarget:self action:@selector(onClickStopBtn:) forEventEX:REALVIEW_EVENT_STOPBTNTOUCHUPINSIDE];
     [_realView addTarget:self action:@selector(oneTapView:) forEventEX:REALVIEW_EVENT_ONETAPVIEW];
@@ -398,7 +399,7 @@ extern long g_lRealTotleFlux;
     int nCtrlViewY = _realView.frame.origin.y + _realView.frame.size.height;
     _ctrlView = [[UIView alloc] initWithFrame:CGRectMake(0, nCtrlViewY, gfScreenWidth, screenSize.height - nCtrlViewY)];
     _ctrlView.backgroundColor = UIColorFromRGB(0xf2eff6, 1.0f);
-    [self.view addSubview:_ctrlView];
+//    [self.view addSubview:_ctrlView];
     //    _ctrlView.backgroundColor = [UIColor greenColor];//颜色
 
     

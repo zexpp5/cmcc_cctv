@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     YSMobilePages *mp = [[YSMobilePages alloc] init];
     self.page = mp;
     [self login];//登录

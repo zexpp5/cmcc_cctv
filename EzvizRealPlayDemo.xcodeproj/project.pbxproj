@@ -45,6 +45,9 @@
 		8CC28D46197C0C8A0004BD81 /* full_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC28D44197C0C8A0004BD81 /* full_pause.png */; };
 		D5D352841B4133E2008A3004 /* home_icon_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5D352831B4133E2008A3004 /* home_icon_01@2x.png */; };
 		D5D3528D1B413779008A3004 /* home_icon_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5D3528C1B413779008A3004 /* home_icon_02@2x.png */; };
+		D5D352911B415B0A008A3004 /* MyPicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D3528F1B415B0A008A3004 /* MyPicTableViewCell.m */; };
+		D5D352921B415B0A008A3004 /* MyPicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D352901B415B0A008A3004 /* MyPicTableViewCell.xib */; };
+		D5D352971B416B5A008A3004 /* MyShowBigPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D352961B416B5A008A3004 /* MyShowBigPicViewController.m */; };
 		E30338431991019F00029175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30338421991019F00029175 /* Images.xcassets */; };
 		E30338461991029200029175 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338441991029200029175 /* Default-568h@2x.png */; };
 		E30338471991029200029175 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338451991029200029175 /* Default@2x.png */; };
@@ -247,6 +250,11 @@
 		8CC28D44197C0C8A0004BD81 /* full_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_pause.png; sourceTree = "<group>"; };
 		D5D352831B4133E2008A3004 /* home_icon_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_icon_01@2x.png"; sourceTree = "<group>"; };
 		D5D3528C1B413779008A3004 /* home_icon_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_icon_02@2x.png"; sourceTree = "<group>"; };
+		D5D3528E1B415B0A008A3004 /* MyPicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPicTableViewCell.h; sourceTree = "<group>"; };
+		D5D3528F1B415B0A008A3004 /* MyPicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPicTableViewCell.m; sourceTree = "<group>"; };
+		D5D352901B415B0A008A3004 /* MyPicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPicTableViewCell.xib; sourceTree = "<group>"; };
+		D5D352951B416B5A008A3004 /* MyShowBigPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyShowBigPicViewController.h; sourceTree = "<group>"; };
+		D5D352961B416B5A008A3004 /* MyShowBigPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyShowBigPicViewController.m; sourceTree = "<group>"; };
 		E30338421991019F00029175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E30338441991029200029175 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "image/Default-568h@2x.png"; sourceTree = "<group>"; };
 		E30338451991029200029175 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "image/Default@2x.png"; sourceTree = "<group>"; };
@@ -546,6 +554,11 @@
 				E361E4F01A35BB6C00974327 /* YSCheckSMSCodeViewController.h */,
 				E361E4F11A35BB6C00974327 /* YSCheckSMSCodeViewController.m */,
 				E361E4F21A35BB6C00974327 /* YSCheckSMSCodeViewController.xib */,
+				D5D3528E1B415B0A008A3004 /* MyPicTableViewCell.h */,
+				D5D3528F1B415B0A008A3004 /* MyPicTableViewCell.m */,
+				D5D352901B415B0A008A3004 /* MyPicTableViewCell.xib */,
+				D5D352951B416B5A008A3004 /* MyShowBigPicViewController.h */,
+				D5D352961B416B5A008A3004 /* MyShowBigPicViewController.m */,
 			);
 			path = EzvizRealPlayDemo;
 			sourceTree = "<group>";
@@ -973,6 +986,7 @@
 				E334ADD31988A01000233190 /* play_close.png in Resources */,
 				E36D05081978CACB000CFEE4 /* CPlaybackController.xib in Resources */,
 				E371CAE51A20386500BA9049 /* circle_success.png in Resources */,
+				D5D352921B415B0A008A3004 /* MyPicTableViewCell.xib in Resources */,
 				E36D04941978B7B1000CFEE4 /* YSDemoAlarmListViewController.xib in Resources */,
 				E334ADD01988A01000233190 /* hd_sel.png in Resources */,
 				E371CAE41A20386500BA9049 /* circle_failed.png in Resources */,
@@ -1082,9 +1096,11 @@
 				E36D050A1978CACB000CFEE4 /* CTimeBarPanel.m in Sources */,
 				46BB4C7919878AE5008A5FFB /* RealPlayViewController.m in Sources */,
 				E3B0B1A11A1EDEFD00731A15 /* BonjourBrowser.m in Sources */,
+				D5D352911B415B0A008A3004 /* MyPicTableViewCell.m in Sources */,
 				E310DEF419F79D410091B10E /* YSShowDeviceCaptureViewController.m in Sources */,
 				E389A5A11A6D3CCD00E03834 /* YSVideoSquareVideoInfo.m in Sources */,
 				8CC28D0C197BC1F50004BD81 /* VideoAlarmMsgCell.m in Sources */,
+				D5D352971B416B5A008A3004 /* MyShowBigPicViewController.m in Sources */,
 				46BB4C961987B33A008A5FFB /* IntercomVolumnView.m in Sources */,
 				46BB4C9B1987B8B8008A5FFB /* CAttention.m in Sources */,
 				46BB4C8819878AE5008A5FFB /* TipsPublicView.m in Sources */,

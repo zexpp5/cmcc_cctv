@@ -21,9 +21,11 @@
 #import "RealPlayViewController.h"
 #import "YSShowDeviceCaptureViewController.h"
 #import "CSNAddByQRcodeViewController.h"
+#import "MyPicTableViewCell.h"
+#import "MyShowBigPicViewController.h"
 
 @interface CMyCameraListViewController () <MyCameraListCellDelegate, UITableViewDataSource,
-UITableViewDelegate, UIAlertViewDelegate>
+UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 {
 }
 
@@ -43,6 +45,7 @@ UITableViewDelegate, UIAlertViewDelegate>
 {
     UIButton * largeImageBtn;
     YSCameraInfo          *cameraInfo;               // 当前正在播放的摄像机信息
+    NSMutableArray * _timeArrayList;
 
 }
 #pragma -
@@ -57,6 +60,7 @@ UITableViewDelegate, UIAlertViewDelegate>
     [_coverDict release];
     [_indicator release];
     [_reloadBtn release];
+    [_timeArrayList release];
     [super dealloc];
 }
 
@@ -67,7 +71,7 @@ UITableViewDelegate, UIAlertViewDelegate>
     {
         _cameraList = [[NSMutableArray alloc] init];
         _coverDict = [[NSMutableDictionary alloc] init];
-        
+        _timeArrayList = [[NSMutableArray alloc]init];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(cameraCoverRequestDidFinished:)
                                                      name:kRequestCameraCaptureDidFinishedNotification
@@ -91,7 +95,6 @@ UITableViewDelegate, UIAlertViewDelegate>
     [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
     //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"home_icon_02"] forState:UIControlStateNormal];
-    [leftBtn addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *lestItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = lestItem;
     [lestItem release];
@@ -101,7 +104,7 @@ UITableViewDelegate, UIAlertViewDelegate>
     [btnAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
 //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
     [btnAddDevice setBackgroundImage:[UIImage imageNamed:@"home_icon_01"] forState:UIControlStateNormal];
-    [btnAddDevice addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
+//    [btnAddDevice addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
     self.navigationItem.rightBarButtonItem = rightItem;
     [rightItem release];
@@ -113,8 +116,9 @@ UITableViewDelegate, UIAlertViewDelegate>
     [_tableView setHidden:YES];
     
     _tableView.frame = CGRectMake(0, 200, self.view.bounds.size.width, self.view.bounds.size.height-200);
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addLargeImageView];//新加的大图片
-    
+    [_timeArrayList addObjectsFromArray:@[@"2015-06-19 15:30:29",@"2015-06-20 15:30:29",@"2015-06-21 15:30:29",@"2015-06-22 15:30:29"] ];
     
     YSMobilePages *mobilePage = [[YSMobilePages alloc] init];
     self.mp = mobilePage;
@@ -139,7 +143,6 @@ UITableViewDelegate, UIAlertViewDelegate>
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     [self searchCameras];
 }
 
@@ -152,41 +155,69 @@ UITableViewDelegate, UIAlertViewDelegate>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_cameraList count];
+//    return [_cameraList count];
+   return  4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    static NSString *identifierLinear = @"myCameraListLinearCell";
+//    
+//    MyCameraListCell *cell = (MyCameraListCell *)[tableView dequeueReusableCellWithIdentifier:identifierLinear];
+//    
+//    if (nil == cell) {
+//        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyCameraListCell" owner:self options:nil] objectAtIndex:0];
+//    }
+//
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    cell.delegate = self;
+//    YSCameraInfo *ci = [_cameraList objectAtIndex:indexPath.row];
+//    
+//    [cell reloadWithCamera:ci];
+//    
+//    UIImage *coverImage = [_coverDict objectForKey:ci.cameraId];
+//    [cell.coverImgView setImage:coverImage];
+//    if (indexPath.row == 0) {
+//        [largeImageBtn setImage:coverImage forState:UIControlStateNormal];
+//        cameraInfo = cell.cameraInfo;
+//        NSLog(@"===显示大图片====");
+//    }
     static NSString *identifierLinear = @"myCameraListLinearCell";
     
-    MyCameraListCell *cell = (MyCameraListCell *)[tableView dequeueReusableCellWithIdentifier:identifierLinear];
+    MyPicTableViewCell *cell = (MyPicTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifierLinear];
     
     if (nil == cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyCameraListCell" owner:self options:nil] objectAtIndex:0];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyPicTableViewCell" owner:self options:nil] objectAtIndex:0];
     }
-
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.delegate = self;
-    YSCameraInfo *ci = [_cameraList objectAtIndex:indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.timeLable.text = [_timeArrayList objectAtIndex:indexPath.row];
+    cell.picBtn.tag = indexPath.row;
     
-    [cell reloadWithCamera:ci];
-    
-    UIImage *coverImage = [_coverDict objectForKey:ci.cameraId];
-    [cell.coverImgView setImage:coverImage];
-    if (indexPath.row == 0) {
-        [largeImageBtn setImage:coverImage forState:UIControlStateNormal];
-        cameraInfo = cell.cameraInfo;
-        NSLog(@"===显示大图片====");
-    }
     
     return cell;
+}
+
+-(void)addLargeIMageVideo{
+    if (_cameraList.count>0) {
+        YSCameraInfo *ci = [_cameraList objectAtIndex:0];
+        UIImage *coverImage = [_coverDict objectForKey:ci.cameraId];
+        [largeImageBtn setImage:coverImage forState:UIControlStateNormal];
+    }
+}
+- (void)didClickBigPicButtonInCell:(MyPicTableViewCell *)cell
+{
+    MyShowBigPicViewController * showBigPicViewController = [[MyShowBigPicViewController alloc] init];
+    [self.navigationController pushViewController:showBigPicViewController animated:NO];
+    [showBigPicViewController release];
 }
 
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 98;
+//    return 98;
+    return 180;
 }
 
 
@@ -287,7 +318,8 @@ UITableViewDelegate, UIAlertViewDelegate>
             {
                 [self parseCameraList:dictionary];
                 
-                [_tableView reloadData];
+//                [_tableView reloadData];
+                [self addLargeIMageVideo];
                 
                 [self captureRealTimeImages];
                 
