@@ -384,8 +384,8 @@ extern long g_lRealTotleFlux;
     [_titleView addBackBtnTouchEvent:self action:@selector(onClickBackBtn)];
     
     int nHeight = (int)(gfScreenWidth / _fVideoRate);
-//    _realView = [[RealView alloc] initWithFrame:CGRectMake(0, [self navBarHeight], gfScreenWidth, (CGFloat)nHeight)];
-    _realView = [[RealView alloc] initWithFrame:CGRectMake(0, [self navBarHeight], self.view.bounds.size.width, self.view.bounds.size.height- [self navBarHeight])];
+    _realView = [[RealView alloc] initWithFrame:CGRectMake(0, [self navBarHeight], gfScreenWidth, (CGFloat)nHeight)];
+//    _realView = [[RealView alloc] initWithFrame:CGRectMake(0, [self navBarHeight], self.view.bounds.size.width, self.view.bounds.size.height- [self navBarHeight])];
     [_realView addTarget:self action:@selector(onClickPlayBtn:) forEventEX:REALVIEW_EVENT_PLAYBTNTOUCHUPINSIDE];
     [_realView addTarget:self action:@selector(onClickStopBtn:) forEventEX:REALVIEW_EVENT_STOPBTNTOUCHUPINSIDE];
     [_realView addTarget:self action:@selector(oneTapView:) forEventEX:REALVIEW_EVENT_ONETAPVIEW];
@@ -393,7 +393,7 @@ extern long g_lRealTotleFlux;
     [_realView addTarget:self action:@selector(onRealViewZoomUp:) forEventEX:REALVIEW_EVENT_ZOOMUP];
     [_realView addTarget:self action:@selector(onRealViewZoomOff:) forEventEX:REALVIEW_EVENT_ZOOMOFF];
     [self.view addSubview:_realView];
-//    _realView.backgroundColor = [UIColor blueColor];//颜色
+    _realView.backgroundColor = [UIColor blueColor];//颜色
 
     
     int nCtrlViewY = _realView.frame.origin.y + _realView.frame.size.height;

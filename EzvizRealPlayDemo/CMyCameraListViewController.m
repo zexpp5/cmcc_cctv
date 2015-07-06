@@ -23,6 +23,9 @@
 #import "CSNAddByQRcodeViewController.h"
 #import "MyPicTableViewCell.h"
 #import "MyShowBigPicViewController.h"
+#import "MyHomeViewController.h"
+#import "InfoViewController.h"
+
 
 @interface CMyCameraListViewController () <MyCameraListCellDelegate, UITableViewDataSource,
 UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
@@ -94,6 +97,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
     //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
+       [leftBtn addTarget:self action:@selector(myhomeview) forControlEvents:UIControlEventTouchUpInside];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"home_icon_02"] forState:UIControlStateNormal];
     UIBarButtonItem *lestItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = lestItem;
@@ -104,7 +108,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [btnAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
 //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
     [btnAddDevice setBackgroundImage:[UIImage imageNamed:@"home_icon_01"] forState:UIControlStateNormal];
-//    [btnAddDevice addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
+    [btnAddDevice addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
     self.navigationItem.rightBarButtonItem = rightItem;
     [rightItem release];
@@ -124,6 +128,12 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     self.mp = mobilePage;
     [mobilePage release];
 }
+-(void)myhomeview
+{
+    MyHomeViewController * homeVC = [[MyHomeViewController alloc]init];
+    [self.navigationController pushViewController:homeVC animated:NO];
+    [homeVC release];
+}
 -(void)addLargeImageView
 {
     largeImageBtn =[UIButton buttonWithType:UIButtonTypeCustom];
@@ -136,6 +146,10 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 -(void)oneTapView//:(UIRotationGestureRecognizer *)sender
 {
     RealPlayViewController *realPlayController = [[RealPlayViewController alloc] init];
+    if (_cameraList.count) {
+        YSCameraInfo *ci = [_cameraList objectAtIndex:0];
+        cameraInfo= ci;
+    }
     realPlayController.cameraInfo = cameraInfo;
     [self.navigationController pushViewController:realPlayController animated:YES];
     [realPlayController release];
@@ -375,10 +389,15 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 }
 
 - (void)addDevice {
-    CSNAddByQRcodeViewController * snScanViewController = [[CSNAddByQRcodeViewController alloc] initWithNibName:@"CSNAddByQRcodeViewController"
-                                                                                                         bundle:nil];
-    [self.navigationController pushViewController:snScanViewController animated:YES];
-    [snScanViewController release];
+//    CSNAddByQRcodeViewController * snScanViewController = [[CSNAddByQRcodeViewController alloc] initWithNibName:@"CSNAddByQRcodeViewController"
+//                                                                                                         bundle:nil];
+//    [self.navigationController pushViewController:snScanViewController animated:YES];
+//    [snScanViewController release];
+    InfoViewController * infoVC = [[InfoViewController alloc]init];
+    [self.navigationController pushViewController:infoVC animated:NO];
+    [infoVC release];
+    
+    
 }
 
 - (void)captureRealTimeImages

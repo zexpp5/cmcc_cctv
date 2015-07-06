@@ -17,6 +17,7 @@
 
 #import "SimpleWifi.h"
 #import "BonjourBrowser.h"
+#import "MyHomeViewController.h"
 
 #define TIPS_VIEW_HEIGHT        200
 
@@ -407,6 +408,8 @@
 //   withAccessToken:[[YSDemoDataModel sharedInstance] userAccessToken]
 //          deviceId:self.strSn
 //           safeKey:self.strVerify];
+
+    
 }
 
 

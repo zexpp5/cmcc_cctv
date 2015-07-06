@@ -14,13 +14,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-BH-VVy">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-BH-VVy">
                         <rect key="frame" x="100" y="5" width="215" height="160"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPv-tD-pM0">
-                        <rect key="frame" x="80" y="5" width="15" height="15"/>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.44977933679999998" blue="0.38683619879999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="cPv-tD-pM0">
+                        <rect key="frame" x="86" y="10" width="6" height="6"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2015年6月29" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imF-kK-esa">
                         <rect key="frame" x="5" y="5" width="73" height="30"/>
@@ -28,10 +27,6 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-p2-WtE">
-                        <rect key="frame" x="87" y="19" width="1" height="160"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </imageView>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5R-zF-EB2">
                         <rect key="frame" x="100" y="5" width="215" height="160"/>
                         <state key="normal">
@@ -41,6 +36,9 @@
                             <action selector="clickPicBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cRY-iO-Eev"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline.png" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-p2-WtE">
+                        <rect key="frame" x="82" y="5" width="15" height="160"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -53,4 +51,9 @@
             <point key="canvasLocation" x="463" y="282"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="pic.jpg" width="1024" height="690"/>
+        <image name="time.png" width="13" height="13"/>
+        <image name="timeline.png" width="50" height="531"/>
+    </resources>
 </document>

@@ -23,7 +23,7 @@
     
     UIImageView *bigImageView = [[UIImageView alloc] init];
     bigImageView.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height);
-    UIImage *image = [UIImage imageNamed:@"Default"];
+    UIImage *image = [UIImage imageNamed:@"pic.jpg"];
     bigImageView.image = image;
     [self.view addSubview:bigImageView];
 }
