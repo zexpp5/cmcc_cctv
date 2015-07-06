@@ -17,12 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self.navigationItem.hidesBackButton = YES;
     UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"完成", nil) style:UIBarButtonItemStyleDone target:self action:@selector(finishLoadImage)];
     self.navigationItem.rightBarButtonItem = rightItem;
-    
     UIImageView *bigImageView = [[UIImageView alloc] init];
-    bigImageView.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height);
+    bigImageView.contentMode = UIViewContentModeScaleAspectFit;
+    bigImageView.frame = CGRectMake(0, 64,self.view.bounds.size.width, self.view.bounds.size.height-64);
     UIImage *image = [UIImage imageNamed:@"pic.jpg"];
     bigImageView.image = image;
     [self.view addSubview:bigImageView];

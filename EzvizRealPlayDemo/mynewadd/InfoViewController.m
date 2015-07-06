@@ -29,15 +29,7 @@
     
     self.navigationItem.title = @"报警消息";
     
-//    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
-//    [leftBtn addTarget:self action:@selector(backBtn) forControlEvents:UIControlEventTouchUpInside];
-//    [leftBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-//    UIBarButtonItem *lestItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
-//    self.navigationItem.leftBarButtonItem = lestItem;
-//    [lestItem release];
-//    
-    
+
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
     [btnAddDevice setTitle:@"清空" forState:UIControlStateNormal];
@@ -51,10 +43,14 @@
     tableView.dataSource=self;
     [self.view addSubview:tableView];
     self.automaticallyAdjustsScrollViewInsets=NO;
+    tableView.separatorStyle=NO;
+    
+    tableView.showsVerticalScrollIndicator = NO;
+
     
     
-    section_arr1=[[NSMutableArray alloc]initWithObjects:@"苏珊家的客厅",@"苏珊家的厨房",@"苏珊家的餐厅",nil];
-    section_arr2=[[NSMutableArray alloc]initWithObjects:@"苏珊家的客厅",@"苏珊家的厨房",@"苏珊家的餐厅", nil];
+    section_arr1=[[NSMutableArray alloc]initWithObjects:@"19:59:21",@"09:59:21",@"19:23:21",nil];
+    section_arr2=[[NSMutableArray alloc]initWithObjects:@"05:33:21",@"11:59:21",@"19:11:21", nil];
     
     // Do any additional setup after loading the view.
 }
@@ -80,7 +76,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 160.0f;
+    return 230.0f;
     
 }
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -96,12 +92,12 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString * cellName=@"cell";
     InfoTableViewCell * cell=[tableView dequeueReusableCellWithIdentifier:cellName];
     if (cell==nil) {
         cell=[[[NSBundle mainBundle]loadNibNamed:@"InfoTableViewCell" owner:self options:nil] lastObject ];
     }
-    
     if (indexPath.section == 0) {
         cell.infoLable.text =[section_arr1 objectAtIndex:indexPath.row];
     }else{

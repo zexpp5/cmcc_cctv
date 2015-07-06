@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CF73C591B4AD1130062D48A /* clockicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF73C581B4AD1130062D48A /* clockicon.png */; };
 		468B4A661941659600233CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468B4A651941659600233CF0 /* Foundation.framework */; };
 		468B4A6A1941659600233CF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468B4A691941659600233CF0 /* UIKit.framework */; };
 		468B4A701941659600233CF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 468B4A6E1941659600233CF0 /* InfoPlist.strings */; };
@@ -50,7 +51,6 @@
 		D55DFADC1B479CC100EEC8EA /* 其他下拉.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFACB1B479CC100EEC8EA /* 其他下拉.png */; };
 		D55DFADD1B479CC100EEC8EA /* 刷新.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFACC1B479CC100EEC8EA /* 刷新.png */; };
 		D55DFADE1B479CC100EEC8EA /* 对号.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFACD1B479CC100EEC8EA /* 对号.png */; };
-		D55DFAE01B479CC100EEC8EA /* 时间轴.psd in Resources */ = {isa = PBXBuildFile; fileRef = D55DFACF1B479CC100EEC8EA /* 时间轴.psd */; };
 		D55DFAE11B479CC100EEC8EA /* 时间轴警报红点.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFAD01B479CC100EEC8EA /* 时间轴警报红点.png */; };
 		D55DFAE21B479CC100EEC8EA /* 白色指示灯.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFAD11B479CC100EEC8EA /* 白色指示灯.png */; };
 		D55DFAE31B479CC100EEC8EA /* 监控开启的绿色指示灯.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFAD21B479CC100EEC8EA /* 监控开启的绿色指示灯.png */; };
@@ -224,6 +224,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CF73C581B4AD1130062D48A /* clockicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockicon.png; sourceTree = "<group>"; };
 		468B4A621941659600233CF0 /* EzvizRealPlayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzvizRealPlayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468B4A651941659600233CF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		468B4A691941659600233CF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -286,7 +287,6 @@
 		D55DFACB1B479CC100EEC8EA /* 其他下拉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他下拉.png"; sourceTree = "<group>"; };
 		D55DFACC1B479CC100EEC8EA /* 刷新.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刷新.png"; sourceTree = "<group>"; };
 		D55DFACD1B479CC100EEC8EA /* 对号.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "对号.png"; sourceTree = "<group>"; };
-		D55DFACF1B479CC100EEC8EA /* 时间轴.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "时间轴.psd"; sourceTree = "<group>"; };
 		D55DFAD01B479CC100EEC8EA /* 时间轴警报红点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时间轴警报红点.png"; sourceTree = "<group>"; };
 		D55DFAD11B479CC100EEC8EA /* 白色指示灯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白色指示灯.png"; sourceTree = "<group>"; };
 		D55DFAD21B479CC100EEC8EA /* 监控开启的绿色指示灯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "监控开启的绿色指示灯.png"; sourceTree = "<group>"; };
@@ -739,6 +739,7 @@
 		D55DFAC41B479CC100EEC8EA /* imagenew */ = {
 			isa = PBXGroup;
 			children = (
+				2CF73C581B4AD1130062D48A /* clockicon.png */,
 				D5CA75451B4A6C53004C59F2 /* 1.png */,
 				D5CA75461B4A6C53004C59F2 /* 2.png */,
 				D5CA75471B4A6C53004C59F2 /* 3.png */,
@@ -759,7 +760,6 @@
 				D55DFACB1B479CC100EEC8EA /* 其他下拉.png */,
 				D55DFACC1B479CC100EEC8EA /* 刷新.png */,
 				D55DFACD1B479CC100EEC8EA /* 对号.png */,
-				D55DFACF1B479CC100EEC8EA /* 时间轴.psd */,
 				D55DFAD01B479CC100EEC8EA /* 时间轴警报红点.png */,
 				D55DFAD11B479CC100EEC8EA /* 白色指示灯.png */,
 				D55DFAD21B479CC100EEC8EA /* 监控开启的绿色指示灯.png */,
@@ -1075,7 +1075,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D55DFAE01B479CC100EEC8EA /* 时间轴.psd in Resources */,
+				2CF73C591B4AD1130062D48A /* clockicon.png in Resources */,
 				E371CAE81A20386500BA9049 /* connect3.png in Resources */,
 				E334ADE71988A01000233190 /* spkImg.png in Resources */,
 				E389A5AE1A6DF5ED00E03834 /* YSVideoSquarePlayingViewController.xib in Resources */,

@@ -97,7 +97,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
     //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
-       [leftBtn addTarget:self action:@selector(myhomeview) forControlEvents:UIControlEventTouchUpInside];
+//       [leftBtn addTarget:self action:@selector(myhomeview) forControlEvents:UIControlEventTouchUpInside];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"home_icon_02"] forState:UIControlStateNormal];
     UIBarButtonItem *lestItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = lestItem;
