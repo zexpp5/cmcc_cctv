@@ -93,12 +93,10 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 {    
     [super viewDidLoad];
     
-    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
-    UIImage *backgroundImage = [self imageWithColor:[UIColor blackColor]];
-    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
     self.navigationItem.title = @"我的设备";
     UIColor *color = [UIColor whiteColor];
@@ -188,6 +186,9 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    UIImage *backgroundImage = [self imageWithColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
     [self searchCameras];
 }
 

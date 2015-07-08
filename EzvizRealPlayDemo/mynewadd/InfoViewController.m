@@ -28,7 +28,7 @@
     
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
 
-    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     
