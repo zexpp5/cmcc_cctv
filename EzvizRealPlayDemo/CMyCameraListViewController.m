@@ -93,7 +93,18 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 {    
     [super viewDidLoad];
     
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    UIImage *backgroundImage = [self imageWithColor:[UIColor blackColor]];
+    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    
     self.navigationItem.title = @"我的设备";
+    UIColor *color = [UIColor whiteColor];
+    NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
+    
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
     //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
@@ -137,11 +148,31 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 -(void)addLargeImageView
 {
     largeImageBtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    largeImageBtn.frame = CGRectMake(0, 64, self.view.bounds.size.width, 200);
-    [largeImageBtn setTitle:@"直播" forState:UIControlStateNormal];
+    largeImageBtn.frame = CGRectMake(0, 0, self.view.bounds.size.width, 200);
+//    [largeImageBtn setTitle:@"直播" forState:UIControlStateNormal];
     largeImageBtn.backgroundColor = [UIColor grayColor];
-    [largeImageBtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
+//    [largeImageBtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:largeImageBtn];
+    
+    
+    UIButton * startbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [startbtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
+     startbtn.frame = CGRectMake((largeImageBtn.bounds.size.width-58)/2, (largeImageBtn.bounds.size.height-58)/2, 58, 58);
+    [startbtn setImage:[UIImage imageNamed:@"start"] forState:UIControlStateNormal];
+    [largeImageBtn addSubview:startbtn];
+}
+-(UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
 }
 -(void)oneTapView//:(UIRotationGestureRecognizer *)sender
 {
@@ -394,6 +425,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 //    [self.navigationController pushViewController:snScanViewController animated:YES];
 //    [snScanViewController release];
     InfoViewController * infoVC = [[InfoViewController alloc]init];
+
     [self.navigationController pushViewController:infoVC animated:NO];
     [infoVC release];
     

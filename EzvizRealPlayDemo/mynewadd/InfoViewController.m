@@ -26,19 +26,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
     
     self.navigationItem.title = @"报警消息";
+    UIColor *color = [UIColor whiteColor];
+    NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
     
-
-    UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
-    [btnAddDevice setTitle:@"清空" forState:UIControlStateNormal];
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
-    self.navigationItem.rightBarButtonItem = rightItem;
-    [rightItem release];
-
     
-    UITableView * tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width,480) style:UITableViewStylePlain];
+    UIImage *backgroundImage = [self imageWithColor:[UIColor blackColor]];
+    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    
+    
+    UITableView * tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,self.view.bounds.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate=self;
     tableView.dataSource=self;
     [self.view addSubview:tableView];
@@ -54,6 +58,23 @@
     
     // Do any additional setup after loading the view.
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+
+}
+-(UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
 -(void)backBtn
 {
     [self.navigationController popToRootViewControllerAnimated:NO];
@@ -66,30 +87,20 @@
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 6;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 230.0f;
+    return 232.0f;
     
 }
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    if (section==0) {
-        return @"今天";
-    }else
-    {
-        return @"昨天";
 
-    }
-    
-}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -98,12 +109,7 @@
     if (cell==nil) {
         cell=[[[NSBundle mainBundle]loadNibNamed:@"InfoTableViewCell" owner:self options:nil] lastObject ];
     }
-    if (indexPath.section == 0) {
-        cell.infoLable.text =[section_arr1 objectAtIndex:indexPath.row];
-    }else{
-        cell.infoLable.text = [section_arr2 objectAtIndex:indexPath.row];
-    }
-    return cell;
+       return cell;
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,8 +14,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NtU-uf-wgN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="222"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NtU-uf-wgN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19:59:21" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1l-Md-HJ1">
                         <rect key="frame" x="33" y="179" width="90" height="22"/>
@@ -32,6 +32,9 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ehL-9G-Hfc">
                         <rect key="frame" x="8" y="181" width="17" height="17"/>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color.png" translatesAutoresizingMaskIntoConstraints="NO" id="kea-qy-BUn">
+                        <rect key="frame" x="0.0" y="91" width="414" height="140"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -43,6 +46,7 @@
     </objects>
     <resources>
         <image name="clockicon.png" width="42" height="42"/>
+        <image name="color.png" width="1242" height="425"/>
         <image name="pic.jpg" width="1024" height="690"/>
     </resources>
 </document>

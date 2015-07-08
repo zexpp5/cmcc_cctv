@@ -33,7 +33,6 @@
     
     self.window.rootViewController = nav;
     [nav release];
-    
     return YES;
 }
 							
