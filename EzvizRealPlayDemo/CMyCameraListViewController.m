@@ -99,7 +99,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     
     
     self.navigationItem.title = @"我的设备";
-    UIColor *color = [UIColor whiteColor];
+    UIColor *color = [UIColor blackColor];
     NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
     self.navigationController.navigationBar.titleTextAttributes = dict;
     

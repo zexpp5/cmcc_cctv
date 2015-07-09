@@ -20,10 +20,12 @@
     
     self.navigationItem.hidesBackButton = YES;
     UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"完成", nil) style:UIBarButtonItemStyleDone target:self action:@selector(finishLoadImage)];
+    rightItem.tintColor = [UIColor blackColor];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
     UIImageView *bigImageView = [[UIImageView alloc] init];
     bigImageView.contentMode = UIViewContentModeScaleAspectFit;
-    bigImageView.frame = CGRectMake(0, 64,self.view.bounds.size.width, self.view.bounds.size.height-64);
+    bigImageView.frame = CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height);
     UIImage *image = [UIImage imageNamed:@"pic.jpg"];
     bigImageView.image = image;
     [self.view addSubview:bigImageView];
