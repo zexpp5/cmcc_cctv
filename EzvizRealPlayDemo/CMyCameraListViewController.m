@@ -25,7 +25,8 @@
 #import "MyShowBigPicViewController.h"
 #import "MyHomeViewController.h"
 #import "InfoViewController.h"
-
+#import "MainViewController.h"
+#import "ViewController.h"
 
 @interface CMyCameraListViewController () <MyCameraListCellDelegate, UITableViewDataSource,
 UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
@@ -98,7 +99,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     
-    self.navigationItem.title = @"我的设备";
+//    self.navigationItem.title = @"我的设备";
     UIColor *color = [UIColor blackColor];
     NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
     self.navigationController.navigationBar.titleTextAttributes = dict;
@@ -106,7 +107,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
     //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
-//       [leftBtn addTarget:self action:@selector(myhomeview) forControlEvents:UIControlEventTouchUpInside];
+    [leftBtn addTarget:self action:@selector(myhomeview) forControlEvents:UIControlEventTouchUpInside];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"home_icon_02"] forState:UIControlStateNormal];
     UIBarButtonItem *lestItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.navigationItem.leftBarButtonItem = lestItem;
@@ -126,12 +127,13 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [[_reloadBtn layer] setBorderColor:[UIColor grayColor].CGColor];
     
     [_indicator setHidden:YES];
-    [_tableView setHidden:YES];
+    [_tableView setHidden:NO];
     
-    _tableView.frame = CGRectMake(0, 200, self.view.bounds.size.width, self.view.bounds.size.height-200);
+    _tableView.frame = CGRectMake(0, 205, self.view.bounds.size.width, self.view.bounds.size.height-200);
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addLargeImageView];//新加的大图片
-    [_timeArrayList addObjectsFromArray:@[@"2015-06-19 15:30:29",@"2015-06-20 15:30:29",@"2015-06-21 15:30:29",@"2015-06-22 15:30:29"] ];
+//    [_timeArrayList addObjectsFromArray:@[@"19:59  6月21日",@"18:57  6月21日",@"11:03  6月21日",@"08:58  6月21日"] ];
+     [_timeArrayList addObjectsFromArray:@[@"19:59",@"18:57",@"11:03",@"08:58"] ];
     
     YSMobilePages *mobilePage = [[YSMobilePages alloc] init];
     self.mp = mobilePage;
@@ -150,6 +152,8 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 //    [largeImageBtn setTitle:@"直播" forState:UIControlStateNormal];
     largeImageBtn.backgroundColor = [UIColor grayColor];
 //    [largeImageBtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
+    [largeImageBtn setImage:[UIImage imageNamed:@"first.jpg"] forState:UIControlStateNormal];
+
     [self.view addSubview:largeImageBtn];
     
     
@@ -174,22 +178,29 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 }
 -(void)oneTapView//:(UIRotationGestureRecognizer *)sender
 {
-    RealPlayViewController *realPlayController = [[RealPlayViewController alloc] init];
-    if (_cameraList.count) {
-        YSCameraInfo *ci = [_cameraList objectAtIndex:0];
-        cameraInfo= ci;
-    }
-    realPlayController.cameraInfo = cameraInfo;
-    [self.navigationController pushViewController:realPlayController animated:YES];
-    [realPlayController release];
+//    RealPlayViewController *realPlayController = [[RealPlayViewController alloc] init];
+//    if (_cameraList.count) {
+//        YSCameraInfo *ci = [_cameraList objectAtIndex:0];
+//        cameraInfo= ci;
+//    }
+//    realPlayController.cameraInfo = cameraInfo;
+//    [self.navigationController pushViewController:realPlayController animated:YES];
+//    [realPlayController release];
+    ViewController * mvc = [[ViewController alloc]init];
+    [self.navigationController pushViewController:mvc animated:NO];
+    [mvc release];
 }
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.navigationItem.title = @"我的设备";
+    UIColor *color = [UIColor blackColor];
+    NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
     UIImage *backgroundImage = [self imageWithColor:[UIColor whiteColor]];
     [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
-    [self searchCameras];
+//    [self searchCameras];
 }
 
 #pragma mark - UITableViewDataSource
@@ -238,6 +249,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     cell.delegate = self;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = [_timeArrayList objectAtIndex:indexPath.row];
+    cell.dateLable.text = @"6月21日";
     cell.picBtn.tag = indexPath.row;
     
     

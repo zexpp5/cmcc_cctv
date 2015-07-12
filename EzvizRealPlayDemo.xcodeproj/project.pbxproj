@@ -223,6 +223,14 @@
 		E3B0B1781A1EDEFD00731A15 /* CSNAddByQRcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B0B1041A1EDEFD00731A15 /* CSNAddByQRcodeViewController.xib */; };
 		E3B0B1A11A1EDEFD00731A15 /* BonjourBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B0B1571A1EDEFD00731A15 /* BonjourBrowser.m */; };
 		E3B0B1A21A1EDEFD00731A15 /* SimpleWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B0B1591A1EDEFD00731A15 /* SimpleWifi.m */; };
+		FA1622071B4EBB3400CE4964 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1622061B4EBB3400CE4964 /* MainViewController.m */; };
+		FA16220C1B4EBE7700CE4964 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16220B1B4EBE7700CE4964 /* ViewController.m */; };
+		FA16220E1B4EBFC600CE4964 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA16220D1B4EBFC600CE4964 /* Icon.png */; };
+		FA1622101B4EC03F00CE4964 /* myvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA16220F1B4EC03F00CE4964 /* myvideo.mp4 */; };
+		FA1622121B4EC3FC00CE4964 /* first.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA1622111B4EC3FC00CE4964 /* first.jpg */; };
+		FA1622141B4ECC2200CE4964 /* pictrue.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1622131B4ECC2200CE4964 /* pictrue.png */; };
+		FA1622161B4ECC6B00CE4964 /* backpictrue.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1622151B4ECC6B00CE4964 /* backpictrue.png */; };
+		FA1622181B4ED23D00CE4964 /* spec.png in Resources */ = {isa = PBXBuildFile; fileRef = FA1622171B4ED23D00CE4964 /* spec.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -515,6 +523,16 @@
 		E3B0B1581A1EDEFD00731A15 /* SimpleWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleWifi.h; sourceTree = "<group>"; };
 		E3B0B1591A1EDEFD00731A15 /* SimpleWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleWifi.m; sourceTree = "<group>"; };
 		E3F9727C19C85FE40075D4D0 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		FA1622051B4EBB3400CE4964 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FA1622061B4EBB3400CE4964 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FA16220A1B4EBE7700CE4964 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA16220B1B4EBE7700CE4964 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA16220D1B4EBFC600CE4964 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FA16220F1B4EC03F00CE4964 /* myvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myvideo.mp4; sourceTree = "<group>"; };
+		FA1622111B4EC3FC00CE4964 /* first.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = first.jpg; sourceTree = "<group>"; };
+		FA1622131B4ECC2200CE4964 /* pictrue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pictrue.png; sourceTree = "<group>"; };
+		FA1622151B4ECC6B00CE4964 /* backpictrue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backpictrue.png; sourceTree = "<group>"; };
+		FA1622171B4ED23D00CE4964 /* spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spec.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -715,6 +733,7 @@
 		46D871151942F684000A5753 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				FA16220D1B4EBFC600CE4964 /* Icon.png */,
 				D55DFAC41B479CC100EEC8EA /* imagenew */,
 				E371CAC71A20386500BA9049 /* WIFI */,
 				E371CABB1A20321700BA9049 /* Back_Bnt.png */,
@@ -778,6 +797,15 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				FA1622171B4ED23D00CE4964 /* spec.png */,
+				FA1622151B4ECC6B00CE4964 /* backpictrue.png */,
+				FA1622131B4ECC2200CE4964 /* pictrue.png */,
+				FA1622111B4EC3FC00CE4964 /* first.jpg */,
+				FA16220F1B4EC03F00CE4964 /* myvideo.mp4 */,
+				FA16220A1B4EBE7700CE4964 /* ViewController.h */,
+				FA16220B1B4EBE7700CE4964 /* ViewController.m */,
+				FA1622051B4EBB3400CE4964 /* MainViewController.h */,
+				FA1622061B4EBB3400CE4964 /* MainViewController.m */,
 				D55F15BC1B4A287500EEF122 /* MyPicTableViewCell.h */,
 				D55F15BD1B4A287500EEF122 /* MyPicTableViewCell.m */,
 				D55F15BE1B4A287500EEF122 /* MyPicTableViewCell.xib */,
@@ -1082,6 +1110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF73C591B4AD1130062D48A /* clockicon.png in Resources */,
+				FA1622161B4ECC6B00CE4964 /* backpictrue.png in Resources */,
 				E371CAE81A20386500BA9049 /* connect3.png in Resources */,
 				E334ADE71988A01000233190 /* spkImg.png in Resources */,
 				E389A5AE1A6DF5ED00E03834 /* YSVideoSquarePlayingViewController.xib in Resources */,
@@ -1105,6 +1134,7 @@
 				D55DFADD1B479CC100EEC8EA /* 刷新.png in Resources */,
 				E334ADEE1988A01000233190 /* video_time_bg.png in Resources */,
 				E371CAC21A20321700BA9049 /* BackBnt_sel.png in Resources */,
+				FA1622141B4ECC2200CE4964 /* pictrue.png in Resources */,
 				E334ADED1988A01000233190 /* video_start.png in Resources */,
 				E361E5081A36CD4900974327 /* ptz_down.png in Resources */,
 				E334ADDB1988A01000233190 /* play_stop.png in Resources */,
@@ -1189,6 +1219,7 @@
 				E334ADE11988A01000233190 /* setup_sel.png in Resources */,
 				E361E5071A36CD4900974327 /* ptz_bottom_sel.png in Resources */,
 				E334ADD71988A01000233190 /* play_ptz.png in Resources */,
+				FA1622181B4ED23D00CE4964 /* spec.png in Resources */,
 				E371CAEB1A20386500BA9049 /* connect_reset.png in Resources */,
 				E361E5151A36CD4900974327 /* ptz_up_sel.png in Resources */,
 				E389A59B1A6D25CC00E03834 /* YSVideoSquareColumnViewController.xib in Resources */,
@@ -1204,11 +1235,13 @@
 				8CC28D46197C0C8A0004BD81 /* full_pause.png in Resources */,
 				E334ADE41988A01000233190 /* speech_disable.png in Resources */,
 				E371CAE31A20386500BA9049 /* circle_bg.png in Resources */,
+				FA16220E1B4EBFC600CE4964 /* Icon.png in Resources */,
 				E371CAE21A20386500BA9049 /* circle4.png in Resources */,
 				E371CADD1A20386500BA9049 /* button_red.png in Resources */,
 				D5CA753A1B4A55B5004C59F2 /* back.png in Resources */,
 				E334ADE81988A01000233190 /* talk.png in Resources */,
 				E334ADE31988A01000233190 /* speech.png in Resources */,
+				FA1622121B4EC3FC00CE4964 /* first.jpg in Resources */,
 				E371CADF1A20386500BA9049 /* circle1.png in Resources */,
 				E361E50C1A36CD4900974327 /* ptz_flip2_sel.png in Resources */,
 				468B4A701941659600233CF0 /* InfoPlist.strings in Resources */,
@@ -1224,6 +1257,7 @@
 				E334ADC21988A01000233190 /* flunet_disable.png in Resources */,
 				8CC28D3D197BFCE80004BD81 /* playback_playbar_line.png in Resources */,
 				D57FE49C1B4CE490005AFA68 /* start.png in Resources */,
+				FA1622101B4EC03F00CE4964 /* myvideo.mp4 in Resources */,
 				8CC28D37197BFCE80004BD81 /* pb_timebar_fullscreen.png in Resources */,
 				E371CAE61A20386500BA9049 /* connect1.png in Resources */,
 				D55F15AE1B4A200300EEF122 /* home_icon_02.png in Resources */,
@@ -1247,7 +1281,9 @@
 				E334AD4619877D6900233190 /* ThumbBtnView.m in Sources */,
 				E36D050A1978CACB000CFEE4 /* CTimeBarPanel.m in Sources */,
 				46BB4C7919878AE5008A5FFB /* RealPlayViewController.m in Sources */,
+				FA16220C1B4EBE7700CE4964 /* ViewController.m in Sources */,
 				E3B0B1A11A1EDEFD00731A15 /* BonjourBrowser.m in Sources */,
+				FA1622071B4EBB3400CE4964 /* MainViewController.m in Sources */,
 				D55F15C11B4A287500EEF122 /* MyPicTableViewCell.m in Sources */,
 				E310DEF419F79D410091B10E /* YSShowDeviceCaptureViewController.m in Sources */,
 				E389A5A11A6D3CCD00E03834 /* YSVideoSquareVideoInfo.m in Sources */,

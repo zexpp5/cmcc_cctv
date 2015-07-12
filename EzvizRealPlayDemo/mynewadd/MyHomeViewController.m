@@ -22,60 +22,52 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.userImage.layer.cornerRadius = 20;
-    self.userImage.layer.masksToBounds = YES;
-    // 布局方式
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    // 设置Item大小
-    [layout setItemSize:CGSizeMake(155, 110)];
-    // 设置排列方式
-    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    self.navigationController.navigationBarHidden = YES;
     
-    collectionV = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.tileView.bounds.size.height+64, self.view.bounds.size.width, self.view.bounds.size.height-(self.tileView.bounds.size.height+64)) collectionViewLayout:layout];
-    collectionV.delegate = self;
-    collectionV.dataSource = self;
-    collectionV.backgroundColor = [UIColor grayColor];
-    [collectionV registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-    [self.view addSubview:collectionV];
-    section_arr=[[NSMutableArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",nil];
 
-
-}
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 1;
-}
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 6;
-}
-
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
-{
-    return 1;
-}
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
-{
-    return  CGSizeMake(1, 1);
-}
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
-{
-      return  CGSizeMake(1, 1);
-}
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *cellName = @"cell";
-    MyCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellName forIndexPath:indexPath];
+    UIImageView * imageView = [[UIImageView alloc]init];
+//    imageView.backgroundColor = [UIColor redColor];
+    imageView.image = [UIImage imageNamed:@"spec.png"];
+    imageView.frame = CGRectMake(0, 0, 320, 568);
+    [self.view addSubview:imageView];
+    imageView.contentMode = UIViewContentModeScaleToFill;
     
-    // 1.清理操作
-    cell.contentView.backgroundColor = [UIColor whiteColor];
-    cell.infoImge.image = [UIImage imageNamed:[section_arr objectAtIndex:indexPath.row]];
-    cell.infoLable.text = @"111111111";
-    return cell;
+    UIButton * startbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [startbtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
+    startbtn.frame = CGRectMake(0,20, 60, 60);
+    [self.view addSubview:startbtn];
+
+  
+}
+-(void)oneTapView
+{
+    [self.navigationController popViewControllerAnimated:NO];
+
+}
+- (UIImage *)rescaleImageToSize:(CGSize)size {
+    
+    CGRect rect = CGRectMake(0.0, 0.0, size.width, size.height);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    
+    [self drawInRect:rect];  // scales image to rect
+    
+    UIImage *resImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return resImage;
+    
 }
 
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = NO;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -93,8 +85,6 @@
 
 - (void)dealloc {
 
-    [_tileView release];
-    [_userImage release];
     [super dealloc];
 }
 @end

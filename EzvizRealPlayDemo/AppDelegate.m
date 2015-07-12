@@ -10,7 +10,7 @@
 #import "YSPlayerController.h"
 #import "YSLoginViewController.h"
 #import "YSHTTPClient.h"
-
+#import "CMyCameraListViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -26,8 +26,12 @@
     
     [[YSHTTPClient sharedInstance] setClientAppKey:AppKey secret:AppSecret];
     
-    YSLoginViewController *rootController = [[YSLoginViewController alloc] initWithNibName:@"YSLoginViewController"
-                                                                                    bundle:nil];
+//    YSLoginViewController *rootController = [[YSLoginViewController alloc] initWithNibName:@"YSLoginViewController"
+//                           
+//                                                                                    bundle:nil];
+//    
+    CMyCameraListViewController *rootController = [[CMyCameraListViewController alloc] initWithNibName:@"CMyCameraListViewController" bundle:nil];
+
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootController];
     [rootController release];
     

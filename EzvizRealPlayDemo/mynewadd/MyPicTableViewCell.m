@@ -27,6 +27,7 @@
     [_pointImageView release];
     [_PicImageView release];
     [_picBtn release];
+    [_dateLable release];
     [super dealloc];
 }
 - (IBAction)clickPicBtn:(id)sender {

@@ -17,18 +17,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+//    self.navigationController.navigationBarHidden = YES;
     self.navigationItem.hidesBackButton = YES;
-    UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"完成", nil) style:UIBarButtonItemStyleDone target:self action:@selector(finishLoadImage)];
-    rightItem.tintColor = [UIColor blackColor];
-    self.navigationItem.rightBarButtonItem = rightItem;
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+
+//    UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"完成", nil) style:UIBarButtonItemStyleDone target:self action:@selector(finishLoadImage)];
+//    rightItem.tintColor = [UIColor blackColor];
+//    self.navigationItem.rightBarButtonItem = rightItem;
+//    self.view.backgroundColor = [UIColor redColor];
+//    NSLog(@"========%f=======%f",self.view.bounds.size.height,self.view.bounds.size.width);
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backpictrue.png"]];
     
     UIImageView *bigImageView = [[UIImageView alloc] init];
     bigImageView.contentMode = UIViewContentModeScaleAspectFit;
     bigImageView.frame = CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height);
-    UIImage *image = [UIImage imageNamed:@"pic.jpg"];
+    UIImage *image = [UIImage imageNamed:@"pictrue.png"];
     bigImageView.image = image;
+    bigImageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *singleTap =
+    [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(finishLoadImage)];
+    [bigImageView addGestureRecognizer:singleTap];
+    
     [self.view addSubview:bigImageView];
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = NO;
 }
 - (void)finishLoadImage
 {

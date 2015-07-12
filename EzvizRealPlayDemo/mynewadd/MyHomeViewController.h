@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MyHomeViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
-@property (retain, nonatomic) IBOutlet UIView *tileView;
-@property (retain, nonatomic) IBOutlet UIImageView *userImage;
 
 @end
