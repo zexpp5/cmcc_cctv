@@ -31,11 +31,7 @@
 //    NSLog(@"========%f=======%f",self.view.bounds.size.height,self.view.bounds.size.width);
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backpictrue.png"]];
     
-    MyNavigationBar * myNavigationBar=[[MyNavigationBar alloc]init];
-    myNavigationBar.frame=CGRectMake(0, 20, self.view.bounds.size.width, 44);
-    [myNavigationBar   createMyNavigationBarWithBackGroundImage:@"" andTitle:@"实时影像" andTitleImageName:@"" andLeftBBIImageName:@"back.png" andRightBBIImageName:@"" andClass:self andSEL:@selector(backClick)];
-
-    [self.view addSubview:myNavigationBar];
+  
 
     
     UIImageView *bigImageView = [[UIImageView alloc] init];
@@ -66,6 +62,11 @@
     eventLable1.text=@"2015年6月21日";
     [self.view addSubview:eventLable1];
     
+    MyNavigationBar * myNavigationBar=[[MyNavigationBar alloc]init];
+    myNavigationBar.frame=CGRectMake(0, 20, self.view.bounds.size.width, 44);
+    [myNavigationBar   createMyNavigationBarWithBackGroundImage:@"" andTitle:@"实时影像" andTitleImageName:@"" andLeftBBIImageName:@"back.png" andRightBBIImageName:@"" andClass:self andSEL:@selector(backClick)];
+    
+    [self.view addSubview:myNavigationBar];
 
 }
 -(void)backClick
