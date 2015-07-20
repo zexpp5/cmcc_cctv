@@ -134,8 +134,9 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addLargeImageView];//新加的大图片
     [self addTwoLargeBtn];
-     [_timeArrayList addObjectsFromArray:@[@"19:59",@"18:57",@"11:03",@"08:58"] ];
-    
+//     [_timeArrayList addObjectsFromArray:@[@"19:59",@"18:57",@"11:03",@"08:58"] ];
+    [_timeArrayList addObjectsFromArray:@[@"19:59:01",@"19:57:08",@"16:42:03",@"16:32:06"] ];
+
     YSMobilePages *mobilePage = [[YSMobilePages alloc] init];
     self.mp = mobilePage;
     [mobilePage release];
@@ -292,7 +293,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     cell.delegate = self;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = [_timeArrayList objectAtIndex:indexPath.row];
-    cell.dateLable.text = @"6月21日";
+//    cell.dateLable.text = @"6月21日";
     cell.picBtn.tag = indexPath.row;
     if (indexPath.row == 1) {
         cell.jingbaoImageView.image = [UIImage imageNamed:@"jingbaochudong.png"];

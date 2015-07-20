@@ -18,12 +18,6 @@
                         <rect key="frame" x="100" y="10" width="215" height="160"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2015年6月29" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imF-kK-esa">
-                        <rect key="frame" x="0.0" y="6" width="60" height="30"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5R-zF-EB2">
                         <rect key="frame" x="100" y="3" width="215" height="177"/>
                         <state key="normal">
@@ -36,7 +30,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline.png" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-p2-WtE">
                         <rect key="frame" x="75" y="0.0" width="17" height="180"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6月21日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0di-Xs-PHS">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0di-Xs-PHS">
                         <rect key="frame" x="0.0" y="30" width="60" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,6 +39,12 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCh-7Y-dtW">
                         <rect key="frame" x="264" y="16" width="42" height="35"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imF-kK-esa">
+                        <rect key="frame" x="3" y="0.0" width="70" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
