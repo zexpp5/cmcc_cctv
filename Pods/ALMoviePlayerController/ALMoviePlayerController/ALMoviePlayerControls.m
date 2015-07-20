@@ -688,12 +688,12 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
         self.timeRemainingLabel.frame = CGRectMake(self.scaleButton.frame.origin.x - paddingBetweenButtons - labelWidth, 0, labelWidth, self.barHeight);
         
         //bottom bar
-//        NSLog(@"========%f====%f",_bottomBar.frame.size.width,_bottomBar.frame.origin.x);
+//        NSLog(@"========%f====%f", self.frame.size.width, self.frame.size.width);
         self.bottomBar.frame = CGRectMake(0, self.frame.size.height - self.barHeight, self.frame.size.width, self.barHeight);
-        self.playPauseButton.frame = CGRectMake(209.5f, 9, 185, 40);
-        self.seekForwardButton.frame = CGRectMake(435, 13, 30, 30);
-        self.seekBackwardButton.frame = CGRectMake(125.6f, 13, 30, 30);
-        self.soundButton.frame = CGRectMake(568-55.6, 13, 30, 30);
+        self.playPauseButton.frame = CGRectMake(260.2, 4, 44.5, 44.5);
+        self.seekForwardButton.frame = CGRectMake(375.4, 13, 30, 30);
+        self.seekBackwardButton.frame = CGRectMake(159.2, 13, 30, 30);
+        self.soundButton.frame = CGRectMake(483.3, 13, 30, 30);
 
         
         //hide volume view in iPhone's portrait orientation
@@ -701,7 +701,7 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
             self.volumeView.alpha = 0.f;
         } else {
             self.volumeView.alpha = 1.f;
-            self.volumeView.frame = CGRectMake(29, 19, 40, 23);
+            self.volumeView.frame = CGRectMake(43.8, 19, 40, 23);
         }
         
         self.airplayView.frame = CGRectMake(self.bottomBar.frame.size.width - paddingFromBezel - airplayWidth, self.barHeight/2 - airplayHeight/2, airplayWidth, airplayHeight);
