@@ -132,16 +132,16 @@
 {
     UIImageView * imageView=[[UIImageView alloc]init];
     imageView.frame=CGRectMake(0, 0, tableView.frame.size.width, 40);
-    imageView.backgroundColor = [UIColor lightGrayColor];
+    imageView.backgroundColor = [UIColor colorWithRed:247.0f/255.0f green:248.0f/255.0f blue:248.0f/255.0f alpha:0.5];
     UILabel * lable=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
     lable.backgroundColor=[UIColor clearColor];
     lable.textColor=[UIColor blackColor];
     lable.textAlignment=NSTextAlignmentCenter;
-    lable.font=[UIFont boldSystemFontOfSize:16];
+    lable.font=[UIFont fontWithName:@"Heiti SC" size:16];
     if (section==0) {
         lable.text=@"今天";
     }else{
-        lable.text=@"6月21";
+        lable.text=@"6月21日";
     }
     [imageView addSubview:lable];
     return imageView;
