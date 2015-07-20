@@ -13,7 +13,10 @@
 @end
 
 @implementation MyShowBigPicViewController
-
+{
+    UIButton * largeImageBtn;
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -30,7 +33,7 @@
     
     UIImageView *bigImageView = [[UIImageView alloc] init];
     bigImageView.contentMode = UIViewContentModeScaleAspectFit;
-    bigImageView.frame = CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height);
+    bigImageView.frame = CGRectMake(0, -30,self.view.bounds.size.width, self.view.bounds.size.height);
     UIImage *image = [UIImage imageNamed:@"pictrue.png"];
     bigImageView.image = image;
     bigImageView.userInteractionEnabled = YES;
@@ -39,6 +42,24 @@
     [bigImageView addGestureRecognizer:singleTap];
     
     [self.view addSubview:bigImageView];
+    [self addTwoLargeBtn];
+    
+    UILabel * eventLable=[[UILabel alloc]initWithFrame:CGRectMake(10, 370, 140, 40)];
+    eventLable.backgroundColor=[UIColor clearColor];
+    eventLable.textColor=[UIColor whiteColor];
+    eventLable.textAlignment=NSTextAlignmentCenter;
+    eventLable.font=[UIFont fontWithName:@"Heiti TC" size:36];
+    eventLable.text=@"18:59:21";
+    [self.view addSubview:eventLable];
+    UILabel * eventLable1=[[UILabel alloc]initWithFrame:CGRectMake(10, 392, 90, 40)];
+    eventLable1.backgroundColor=[UIColor clearColor];
+    eventLable1.textColor=[UIColor whiteColor];
+    eventLable1.textAlignment=NSTextAlignmentCenter;
+    eventLable1.font=[UIFont fontWithName:@"Heiti TC" size:12];
+    eventLable1.text=@"2015年6月21日";
+    [self.view addSubview:eventLable1];
+    
+
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -55,6 +76,42 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)addTwoLargeBtn
+{
+    UIView * backView = [[UIView alloc]initWithFrame:CGRectMake(0, largeImageBtn.frame.size.height, self.view.bounds.size.width, 56)];
+    [self.view addSubview:backView];
+    UIButton *leftBtn =[UIButton buttonWithType:UIButtonTypeCustom];
+    leftBtn.frame = CGRectMake(5, self.view.bounds.size.height-51, (self.view.bounds.size.width-15)/2, 46);
+    [leftBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
+    [backView addSubview:leftBtn];
+    
+    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(35, 14, 21.6, 18)];
+    leftImage.image = [UIImage imageNamed:@"cloud.png"];
+    [leftBtn addSubview:leftImage];
+    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(60, 10, 80, 26)];
+    leftLable.font = [UIFont systemFontOfSize:15];
+    leftLable.textColor = [UIColor whiteColor];
+    leftLable.text = @"云存储";
+    [leftBtn addSubview:leftLable];
+    
+    
+    
+    UIButton *rightBtn =[UIButton buttonWithType:UIButtonTypeCustom];
+    rightBtn.frame = CGRectMake(10+ leftBtn.frame.size.width, self.view.bounds.size.height-51, (self.view.bounds.size.width-15)/2, 46);
+    [rightBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
+    [backView addSubview:rightBtn];
+    
+    
+    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 11, 18, 22.14)];
+    rightImage.image = [UIImage imageNamed:@"delete.png"];
+    [rightBtn addSubview:rightImage];
+    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
+    rightLable.font = [UIFont systemFontOfSize:15];
+    rightLable.textColor = [UIColor whiteColor];
+    rightLable.text = @"删除";
+    [rightBtn addSubview:rightLable];
 }
 
 /*

@@ -96,6 +96,8 @@
 		DA7375901B52B085008CADF5 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = DA73758A1B52B085008CADF5 /* record.png */; };
 		DA7375911B52B085008CADF5 /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = DA73758B1B52B085008CADF5 /* sound.png */; };
 		DA7375931B52B48B008CADF5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375921B52B48B008CADF5 /* play.png */; };
+		DADBE8E91B5CCDBE000E2192 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8E71B5CCDBE000E2192 /* cloud.png */; };
+		DADBE8EA1B5CCDBE000E2192 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8E81B5CCDBE000E2192 /* delete.png */; };
 		E30338431991019F00029175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30338421991019F00029175 /* Images.xcassets */; };
 		E30338461991029200029175 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338441991029200029175 /* Default-568h@2x.png */; };
 		E30338471991029200029175 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338451991029200029175 /* Default@2x.png */; };
@@ -368,6 +370,8 @@
 		DA73758A1B52B085008CADF5 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
 		DA73758B1B52B085008CADF5 /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound.png; sourceTree = "<group>"; };
 		DA7375921B52B48B008CADF5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		DADBE8E71B5CCDBE000E2192 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		DADBE8E81B5CCDBE000E2192 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		E30338421991019F00029175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E30338441991029200029175 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "image/Default-568h@2x.png"; sourceTree = "<group>"; };
 		E30338451991029200029175 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "image/Default@2x.png"; sourceTree = "<group>"; };
@@ -844,6 +848,8 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				DADBE8E71B5CCDBE000E2192 /* cloud.png */,
+				DADBE8E81B5CCDBE000E2192 /* delete.png */,
 				D5DE91C71B5CA100006B2549 /* timeline1.png */,
 				D5DE91C81B5CA100006B2549 /* baojingxiaoxi.png */,
 				D5DE91C51B5C8F7A006B2549 /* jingbaochudong.png */,
@@ -1210,6 +1216,7 @@
 				D55DFADD1B479CC100EEC8EA /* 刷新.png in Resources */,
 				E334ADEE1988A01000233190 /* video_time_bg.png in Resources */,
 				E371CAC21A20321700BA9049 /* BackBnt_sel.png in Resources */,
+				DADBE8EA1B5CCDBE000E2192 /* delete.png in Resources */,
 				FA1622141B4ECC2200CE4964 /* pictrue.png in Resources */,
 				E334ADED1988A01000233190 /* video_start.png in Resources */,
 				E361E5081A36CD4900974327 /* ptz_down.png in Resources */,
@@ -1344,6 +1351,7 @@
 				8CC28D3D197BFCE80004BD81 /* playback_playbar_line.png in Resources */,
 				D57FE49C1B4CE490005AFA68 /* start.png in Resources */,
 				D5DE91C61B5C8F7A006B2549 /* jingbaochudong.png in Resources */,
+				DADBE8E91B5CCDBE000E2192 /* cloud.png in Resources */,
 				FA1622101B4EC03F00CE4964 /* myvideo.mp4 in Resources */,
 				8CC28D37197BFCE80004BD81 /* pb_timebar_fullscreen.png in Resources */,
 				E371CAE61A20386500BA9049 /* connect1.png in Resources */,
