@@ -1,0 +1,10 @@
+PODS:
+  - ALMoviePlayerController (0.3.0)
+
+DEPENDENCIES:
+  - ALMoviePlayerController (~> 0.3.0)
+
+SPEC CHECKSUMS:
+  ALMoviePlayerController: caf8e2b455e576f704895882b7c1688686b40b0c
+
+COCOAPODS: 0.37.2

@@ -81,6 +81,15 @@
 		D5CA754F1B4A6C53004C59F2 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = D5CA75491B4A6C53004C59F2 /* 5.png */; };
 		D5CA75501B4A6C53004C59F2 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = D5CA754A1B4A6C53004C59F2 /* 6.png */; };
 		D5FD03BB1B4CC47F00530DED /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = D5FD03BA1B4CC47F00530DED /* color.png */; };
+		DA7375821B528893008CADF5 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7375811B528893008CADF5 /* PlayerViewController.m */; };
+		DA7375841B52ACF6008CADF5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375831B52ACF6008CADF5 /* back.png */; };
+		DA73758C1B52B085008CADF5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375861B52B085008CADF5 /* button.png */; };
+		DA73758D1B52B085008CADF5 /* capture.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375871B52B085008CADF5 /* capture.png */; };
+		DA73758E1B52B085008CADF5 /* fluent.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375881B52B085008CADF5 /* fluent.png */; };
+		DA73758F1B52B085008CADF5 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375891B52B085008CADF5 /* microphone.png */; };
+		DA7375901B52B085008CADF5 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = DA73758A1B52B085008CADF5 /* record.png */; };
+		DA7375911B52B085008CADF5 /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = DA73758B1B52B085008CADF5 /* sound.png */; };
+		DA7375931B52B48B008CADF5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375921B52B48B008CADF5 /* play.png */; };
 		E30338431991019F00029175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30338421991019F00029175 /* Images.xcassets */; };
 		E30338461991029200029175 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338441991029200029175 /* Default-568h@2x.png */; };
 		E30338471991029200029175 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E30338451991029200029175 /* Default@2x.png */; };
@@ -223,6 +232,7 @@
 		E3B0B1781A1EDEFD00731A15 /* CSNAddByQRcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B0B1041A1EDEFD00731A15 /* CSNAddByQRcodeViewController.xib */; };
 		E3B0B1A11A1EDEFD00731A15 /* BonjourBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B0B1571A1EDEFD00731A15 /* BonjourBrowser.m */; };
 		E3B0B1A21A1EDEFD00731A15 /* SimpleWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B0B1591A1EDEFD00731A15 /* SimpleWifi.m */; };
+		E93FFCA86C5DB938D462314E /* libPods-EzvizRealPlayDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B93EBD5F2370AF0081861F74 /* libPods-EzvizRealPlayDemo.a */; };
 		FA1622071B4EBB3400CE4964 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1622061B4EBB3400CE4964 /* MainViewController.m */; };
 		FA16220C1B4EBE7700CE4964 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA16220B1B4EBE7700CE4964 /* ViewController.m */; };
 		FA16220E1B4EBFC600CE4964 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA16220D1B4EBFC600CE4964 /* Icon.png */; };
@@ -290,6 +300,9 @@
 		8CC28D35197BFCE80004BD81 /* playback_playbar_progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playback_playbar_progress.png; sourceTree = "<group>"; };
 		8CC28D43197C0C8A0004BD81 /* full_pause_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_pause_sel.png; sourceTree = "<group>"; };
 		8CC28D44197C0C8A0004BD81 /* full_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_pause.png; sourceTree = "<group>"; };
+		B93EBD5F2370AF0081861F74 /* libPods-EzvizRealPlayDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EzvizRealPlayDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A3958740F04BB745487A11 /* Pods-EzvizRealPlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzvizRealPlayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzvizRealPlayDemo/Pods-EzvizRealPlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D0303D5F92574F32C2F386CA /* Pods-EzvizRealPlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzvizRealPlayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzvizRealPlayDemo/Pods-EzvizRealPlayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D55DFAC71B479CC100EEC8EA /* 下拉分割线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉分割线.png"; sourceTree = "<group>"; };
 		D55DFAC81B479CC100EEC8EA /* 下拉第一条.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉第一条.png"; sourceTree = "<group>"; };
 		D55DFAC91B479CC100EEC8EA /* 下拉箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉箭头.png"; sourceTree = "<group>"; };
@@ -333,6 +346,16 @@
 		D5CA75491B4A6C53004C59F2 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		D5CA754A1B4A6C53004C59F2 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		D5FD03BA1B4CC47F00530DED /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		DA7375801B528893008CADF5 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		DA7375811B528893008CADF5 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		DA7375831B52ACF6008CADF5 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		DA7375861B52B085008CADF5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		DA7375871B52B085008CADF5 /* capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capture.png; sourceTree = "<group>"; };
+		DA7375881B52B085008CADF5 /* fluent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fluent.png; sourceTree = "<group>"; };
+		DA7375891B52B085008CADF5 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		DA73758A1B52B085008CADF5 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		DA73758B1B52B085008CADF5 /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound.png; sourceTree = "<group>"; };
+		DA7375921B52B48B008CADF5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		E30338421991019F00029175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E30338441991029200029175 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "image/Default-568h@2x.png"; sourceTree = "<group>"; };
 		E30338451991029200029175 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "image/Default@2x.png"; sourceTree = "<group>"; };
@@ -556,12 +579,22 @@
 				E323E1B71A6E38D300267E0F /* libPods-ZBarSDK.a in Frameworks */,
 				468B4A661941659600233CF0 /* Foundation.framework in Frameworks */,
 				E323E1B61A6E38D300267E0F /* libPods-SSKeychain.a in Frameworks */,
+				E93FFCA86C5DB938D462314E /* libPods-EzvizRealPlayDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035003BB4F4607FCCD2A6FCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0A3958740F04BB745487A11 /* Pods-EzvizRealPlayDemo.debug.xcconfig */,
+				D0303D5F92574F32C2F386CA /* Pods-EzvizRealPlayDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		468B4A591941659500233CF0 = {
 			isa = PBXGroup;
 			children = (
@@ -569,6 +602,7 @@
 				468B4A8A1941659600233CF0 /* EzvizRealPlayDemoTests */,
 				468B4A641941659600233CF0 /* Frameworks */,
 				468B4A631941659600233CF0 /* Products */,
+				035003BB4F4607FCCD2A6FCB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -596,6 +630,7 @@
 				46E4F4F019416D8C00EDD3D5 /* AVFoundation.framework */,
 				468B4A651941659600233CF0 /* Foundation.framework */,
 				468B4A691941659600233CF0 /* UIKit.framework */,
+				B93EBD5F2370AF0081861F74 /* libPods-EzvizRealPlayDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -797,6 +832,7 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				DA7375851B52B006008CADF5 /* playerImage */,
 				FA1622171B4ED23D00CE4964 /* spec.png */,
 				FA1622151B4ECC6B00CE4964 /* backpictrue.png */,
 				FA1622131B4ECC2200CE4964 /* pictrue.png */,
@@ -822,8 +858,25 @@
 				D5CA75401B4A6415004C59F2 /* MyCollectionViewCell.h */,
 				D5CA75411B4A6415004C59F2 /* MyCollectionViewCell.m */,
 				D5CA75421B4A6415004C59F2 /* MyCollectionViewCell.xib */,
+				DA7375801B528893008CADF5 /* PlayerViewController.h */,
+				DA7375811B528893008CADF5 /* PlayerViewController.m */,
 			);
 			path = mynewadd;
+			sourceTree = "<group>";
+		};
+		DA7375851B52B006008CADF5 /* playerImage */ = {
+			isa = PBXGroup;
+			children = (
+				DA7375921B52B48B008CADF5 /* play.png */,
+				DA7375831B52ACF6008CADF5 /* back.png */,
+				DA7375861B52B085008CADF5 /* button.png */,
+				DA7375871B52B085008CADF5 /* capture.png */,
+				DA7375881B52B085008CADF5 /* fluent.png */,
+				DA7375891B52B085008CADF5 /* microphone.png */,
+				DA73758A1B52B085008CADF5 /* record.png */,
+				DA73758B1B52B085008CADF5 /* sound.png */,
+			);
+			name = playerImage;
 			sourceTree = "<group>";
 		};
 		E334AD8C1988A01000233190 /* Play */ = {
@@ -1059,9 +1112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 468B4A941941659600233CF0 /* Build configuration list for PBXNativeTarget "EzvizRealPlayDemo" */;
 			buildPhases = (
+				BB4FF993AE2FD9377D252686 /* Check Pods Manifest.lock */,
 				468B4A5E1941659600233CF0 /* Sources */,
 				468B4A5F1941659600233CF0 /* Frameworks */,
 				468B4A601941659600233CF0 /* Resources */,
+				9B5DAFF4B48F08E308553B0D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1123,6 +1178,7 @@
 				E371CADE1A20386500BA9049 /* button_red_sel.png in Resources */,
 				8CC28D38197BFCE80004BD81 /* pb_timebar_hour.jpg in Resources */,
 				E361E4F41A35BB6C00974327 /* YSCheckSMSCodeViewController.xib in Resources */,
+				DA7375911B52B085008CADF5 /* sound.png in Resources */,
 				E361E50F1A36CD4900974327 /* ptz_left_sel.png in Resources */,
 				E334ADD91988A01000233190 /* play_sel.png in Resources */,
 				E361E5141A36CD4900974327 /* ptz_up.png in Resources */,
@@ -1142,8 +1198,10 @@
 				E371CAC41A20321700BA9049 /* public_long_btn_sel.png in Resources */,
 				D5CA75341B4A53C7004C59F2 /* pic.jpg in Resources */,
 				D5CA75441B4A6415004C59F2 /* MyCollectionViewCell.xib in Resources */,
+				DA73758C1B52B085008CADF5 /* button.png in Resources */,
 				E334ADD31988A01000233190 /* play_close.png in Resources */,
 				E36D05081978CACB000CFEE4 /* CPlaybackController.xib in Resources */,
+				DA7375931B52B48B008CADF5 /* play.png in Resources */,
 				E371CAE51A20386500BA9049 /* circle_success.png in Resources */,
 				D55DFAE61B479CC100EEC8EA /* 警报触动.png in Resources */,
 				D55DFAE11B479CC100EEC8EA /* 时间轴警报红点.png in Resources */,
@@ -1202,11 +1260,13 @@
 				E334ADD11988A01000233190 /* number_bg.png in Resources */,
 				E30338431991019F00029175 /* Images.xcassets in Resources */,
 				E334ADEA1988A01000233190 /* video.png in Resources */,
+				DA7375841B52ACF6008CADF5 /* back.png in Resources */,
 				D5CA754E1B4A6C53004C59F2 /* 4.png in Resources */,
 				8CC28D3B197BFCE80004BD81 /* playback_fullscreen_progress.png in Resources */,
 				E361E5101A36CD4900974327 /* ptz_right.png in Resources */,
 				E371CAE11A20386500BA9049 /* circle3.png in Resources */,
 				E334ADDD1988A01000233190 /* playback_button.png in Resources */,
+				DA7375901B52B085008CADF5 /* record.png in Resources */,
 				E334ADCA1988A01000233190 /* full_stop.png in Resources */,
 				E334ADBF1988A01000233190 /* balanced_disable.png in Resources */,
 				E334ADD51988A01000233190 /* play_full_play.png in Resources */,
@@ -1214,10 +1274,12 @@
 				8CC28D3C197BFCE80004BD81 /* playback_playbar_bg.jpg in Resources */,
 				E371CAE01A20386500BA9049 /* circle2.png in Resources */,
 				D5CA75381B4A54CB004C59F2 /* time.png in Resources */,
+				DA73758E1B52B085008CADF5 /* fluent.png in Resources */,
 				E334ADC61988A01000233190 /* full_play.png in Resources */,
 				E334ADDC1988A01000233190 /* play_stop_sel.png in Resources */,
 				E334ADE11988A01000233190 /* setup_sel.png in Resources */,
 				E361E5071A36CD4900974327 /* ptz_bottom_sel.png in Resources */,
+				DA73758D1B52B085008CADF5 /* capture.png in Resources */,
 				E334ADD71988A01000233190 /* play_ptz.png in Resources */,
 				FA1622181B4ED23D00CE4964 /* spec.png in Resources */,
 				E371CAEB1A20386500BA9049 /* connect_reset.png in Resources */,
@@ -1254,6 +1316,7 @@
 				D55F15C21B4A287500EEF122 /* MyPicTableViewCell.xib in Resources */,
 				E361E50D1A36CD4900974327 /* ptz_flip_sel.png in Resources */,
 				E371CABA1A202AF400BA9049 /* qrScan_line.png in Resources */,
+				DA73758F1B52B085008CADF5 /* microphone.png in Resources */,
 				E334ADC21988A01000233190 /* flunet_disable.png in Resources */,
 				8CC28D3D197BFCE80004BD81 /* playback_playbar_line.png in Resources */,
 				D57FE49C1B4CE490005AFA68 /* start.png in Resources */,
@@ -1269,6 +1332,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B5DAFF4B48F08E308553B0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EzvizRealPlayDemo/Pods-EzvizRealPlayDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4FF993AE2FD9377D252686 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		468B4A5E1941659600233CF0 /* Sources */ = {
@@ -1310,6 +1406,7 @@
 				E3B0B1A21A1EDEFD00731A15 /* SimpleWifi.m in Sources */,
 				E389A59E1A6D276F00E03834 /* YSVideoSquareColumn.m in Sources */,
 				46BB4C7B19878AE5008A5FFB /* circleWaitView.m in Sources */,
+				DA7375821B528893008CADF5 /* PlayerViewController.m in Sources */,
 				D55F15C71B4A28A700EEF122 /* MyHomeViewController.m in Sources */,
 				46BB4CA11987B936008A5FFB /* MBProgressHUD.m in Sources */,
 				E36D05091978CACB000CFEE4 /* CRecInfo.m in Sources */,
@@ -1424,6 +1521,7 @@
 		};
 		468B4A951941659600233CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A3958740F04BB745487A11 /* Pods-EzvizRealPlayDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
@@ -1451,7 +1549,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/EzvizRealPlayDemo/lib",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1463,6 +1564,7 @@
 		};
 		468B4A961941659600233CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0303D5F92574F32C2F386CA /* Pods-EzvizRealPlayDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
@@ -1484,7 +1586,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/EzvizRealPlayDemo/lib",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;

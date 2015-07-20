@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004F6C173541505EA042B486 /* Pods-EzvizRealPlayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60339254183A219007FFB0C4 /* Pods-EzvizRealPlayDemo-dummy.m */; };
+		0DFCF263ADE40113E7B75F0B /* ALMoviePlayerControls.m in Sources */ = {isa = PBXBuildFile; fileRef = F6737A7D88D61DF6EF41DD2A /* ALMoviePlayerControls.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		27AB30B64FB5D3861AF3647D /* ALAirplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F928DF98B32E0DBCC9E29A04 /* ALAirplayView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D7E17E9A753C039B0FAE22E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB01E33B8179D2FF11F07300 /* Foundation.framework */; };
+		50541F9A6C22DBDFEF392D7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F33E78A2F093AC2F3883C3 /* QuartzCore.framework */; };
+		6C7C76D285052FED9C417FA3 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB908BBEECD46208E774A35 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-dummy.m */; };
+		7636BC084C9EF12B6C6B5F76 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF66A95190102198E3CAACB /* MediaPlayer.framework */; };
+		7FE3AFB6AA6FA70C6A1CEF79 /* ALAirplayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7EB54F0187D6BF6038E528 /* ALAirplayView.h */; };
+		A334717F7DCBFC1E9173828E /* ALMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5693F55CFD0510EF9631822 /* ALMoviePlayerController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD14F6A109EABDA201BE9952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB01E33B8179D2FF11F07300 /* Foundation.framework */; };
+		CCE4D985C6806805AC9BE7AD /* ALMoviePlayerControls.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BCED2068923768CCC9D0F77 /* ALMoviePlayerControls.h */; };
+		DF4D8E01BC4C2C37B7E28E93 /* ALButton.h in Headers */ = {isa = PBXBuildFile; fileRef = AC2B2843EF5C02C9E02DF683 /* ALButton.h */; };
+		E25C37E9B8A3BEE69802C2C8 /* ALButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A845A7BA5B4F557ED115F81 /* ALButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E7941CCE127D03241F32FB6E /* ALMoviePlayerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51576A49288C35795AF2F52A /* ALMoviePlayerController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9370440F46E4AD44E12D37F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92749FA548ABACB607478EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5DDE0FA7BA9D808061938B;
+			remoteInfo = "Pods-EzvizRealPlayDemo-ALMoviePlayerController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FEF6191BA1127D998BF779 /* moviePause.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = moviePause.png; path = ALMoviePlayerController/Images/moviePause.png; sourceTree = "<group>"; };
+		0FF66A95190102198E3CAACB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		1597E25406F1C5788E6D7FD9 /* moviePlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "moviePlay@2x.png"; path = "ALMoviePlayerController/Images/moviePlay@2x.png"; sourceTree = "<group>"; };
+		1AC6EC31052DA9673C814542 /* libPods-EzvizRealPlayDemo-ALMoviePlayerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EzvizRealPlayDemo-ALMoviePlayerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6808090646F50AE12F1B03 /* movieFullscreen@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "movieFullscreen@2x.png"; path = "ALMoviePlayerController/Images/movieFullscreen@2x.png"; sourceTree = "<group>"; };
+		287E24A6473A60DDD1CA4451 /* Pods-EzvizRealPlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EzvizRealPlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2A845A7BA5B4F557ED115F81 /* ALButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALButton.m; path = ALMoviePlayerController/ALButton.m; sourceTree = "<group>"; };
+		2B499D6DFA47CAEA10991C73 /* Pods-EzvizRealPlayDemo-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EzvizRealPlayDemo-environment.h"; sourceTree = "<group>"; };
+		2F7EB54F0187D6BF6038E528 /* ALAirplayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALAirplayView.h; path = ALMoviePlayerController/ALAirplayView.h; sourceTree = "<group>"; };
+		345481A869EFA208EE3CE6D1 /* movieBackwardSelected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "movieBackwardSelected@2x.png"; path = "ALMoviePlayerController/Images/movieBackwardSelected@2x.png"; sourceTree = "<group>"; };
+		387270B260ADA33DA8AFA5F0 /* movieForwardSelected@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "movieForwardSelected@2x.png"; path = "ALMoviePlayerController/Images/movieForwardSelected@2x.png"; sourceTree = "<group>"; };
+		39F47B16D6819CFDA36BC8CD /* moviePlay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = moviePlay.png; path = ALMoviePlayerController/Images/moviePlay.png; sourceTree = "<group>"; };
+		3F86208246BC3A834143D164 /* movieForward.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = movieForward.png; path = ALMoviePlayerController/Images/movieForward.png; sourceTree = "<group>"; };
+		4AD877481E839AE8BF76F85E /* Pods-EzvizRealPlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EzvizRealPlayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4DBC11465D9F41231DF83FF4 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EzvizRealPlayDemo-ALMoviePlayerController.xcconfig"; sourceTree = "<group>"; };
+		51576A49288C35795AF2F52A /* ALMoviePlayerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALMoviePlayerController.h; path = ALMoviePlayerController/ALMoviePlayerController.h; sourceTree = "<group>"; };
+		59F33E78A2F093AC2F3883C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		60339254183A219007FFB0C4 /* Pods-EzvizRealPlayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EzvizRealPlayDemo-dummy.m"; sourceTree = "<group>"; };
+		61651D72C9CDB97828EB45AB /* Pods-EzvizRealPlayDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EzvizRealPlayDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		61F41EE2A1A9F1477D94C119 /* libPods-EzvizRealPlayDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EzvizRealPlayDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C6E6F5A50911FC791724090 /* Pods-EzvizRealPlayDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EzvizRealPlayDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BCED2068923768CCC9D0F77 /* ALMoviePlayerControls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALMoviePlayerControls.h; path = ALMoviePlayerController/ALMoviePlayerControls.h; sourceTree = "<group>"; };
+		8706816B62718BCAF0A965A1 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EzvizRealPlayDemo-ALMoviePlayerController-prefix.pch"; sourceTree = "<group>"; };
+		91AAC41AEF6F9C0327C8A305 /* movieBackward.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = movieBackward.png; path = ALMoviePlayerController/Images/movieBackward.png; sourceTree = "<group>"; };
+		9252E59F3B6F94BA8668D7D0 /* movieFullscreen.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = movieFullscreen.png; path = ALMoviePlayerController/Images/movieFullscreen.png; sourceTree = "<group>"; };
+		9BB908BBEECD46208E774A35 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EzvizRealPlayDemo-ALMoviePlayerController-dummy.m"; sourceTree = "<group>"; };
+		9FF695B8FF4BF9C88FE3DD91 /* movieEndFullscreen@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "movieEndFullscreen@2x.png"; path = "ALMoviePlayerController/Images/movieEndFullscreen@2x.png"; sourceTree = "<group>"; };
+		A0440B79A21C6ED90A294941 /* movieEndFullscreen.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = movieEndFullscreen.png; path = ALMoviePlayerController/Images/movieEndFullscreen.png; sourceTree = "<group>"; };
+		AB01E33B8179D2FF11F07300 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AC2B2843EF5C02C9E02DF683 /* ALButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALButton.h; path = ALMoviePlayerController/ALButton.h; sourceTree = "<group>"; };
+		AC79706FDADE5E2A823E0D72 /* movieBackward@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "movieBackward@2x.png"; path = "ALMoviePlayerController/Images/movieBackward@2x.png"; sourceTree = "<group>"; };
+		B5693F55CFD0510EF9631822 /* ALMoviePlayerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALMoviePlayerController.m; path = ALMoviePlayerController/ALMoviePlayerController.m; sourceTree = "<group>"; };
+		C895329F96D95AAB346DA4D7 /* movieForwardSelected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = movieForwardSelected.png; path = ALMoviePlayerController/Images/movieForwardSelected.png; sourceTree = "<group>"; };
+		CF148B97FDAF2EF5D5345E63 /* movieForward@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "movieForward@2x.png"; path = "ALMoviePlayerController/Images/movieForward@2x.png"; sourceTree = "<group>"; };
+		D02AEFD892550807603FAF3C /* movieBackwardSelected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = movieBackwardSelected.png; path = ALMoviePlayerController/Images/movieBackwardSelected.png; sourceTree = "<group>"; };
+		E5DD95C18291CBBA2826CAD6 /* moviePause@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "moviePause@2x.png"; path = "ALMoviePlayerController/Images/moviePause@2x.png"; sourceTree = "<group>"; };
+		F3612934C2228F4FFA2FCA02 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F6737A7D88D61DF6EF41DD2A /* ALMoviePlayerControls.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALMoviePlayerControls.m; path = ALMoviePlayerController/ALMoviePlayerControls.m; sourceTree = "<group>"; };
+		F6A9507A8EF6DF5B170044FA /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EzvizRealPlayDemo-ALMoviePlayerController-Private.xcconfig"; sourceTree = "<group>"; };
+		F928DF98B32E0DBCC9E29A04 /* ALAirplayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALAirplayView.m; path = ALMoviePlayerController/ALAirplayView.m; sourceTree = "<group>"; };
+		F9694DEF0A8A36F2C1129AB7 /* Pods-EzvizRealPlayDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EzvizRealPlayDemo-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		003F77EA24FDBF6E99077433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7E17E9A753C039B0FAE22E /* Foundation.framework in Frameworks */,
+				7636BC084C9EF12B6C6B5F76 /* MediaPlayer.framework in Frameworks */,
+				50541F9A6C22DBDFEF392D7D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5391AE09ED1D6B012C7E5A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD14F6A109EABDA201BE9952 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0980A6C216251AD24D0D6FA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61F41EE2A1A9F1477D94C119 /* libPods-EzvizRealPlayDemo.a */,
+				1AC6EC31052DA9673C814542 /* libPods-EzvizRealPlayDemo-ALMoviePlayerController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		151D17A74E0F57A308F66BD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91AAC41AEF6F9C0327C8A305 /* movieBackward.png */,
+				AC79706FDADE5E2A823E0D72 /* movieBackward@2x.png */,
+				D02AEFD892550807603FAF3C /* movieBackwardSelected.png */,
+				345481A869EFA208EE3CE6D1 /* movieBackwardSelected@2x.png */,
+				A0440B79A21C6ED90A294941 /* movieEndFullscreen.png */,
+				9FF695B8FF4BF9C88FE3DD91 /* movieEndFullscreen@2x.png */,
+				3F86208246BC3A834143D164 /* movieForward.png */,
+				CF148B97FDAF2EF5D5345E63 /* movieForward@2x.png */,
+				C895329F96D95AAB346DA4D7 /* movieForwardSelected.png */,
+				387270B260ADA33DA8AFA5F0 /* movieForwardSelected@2x.png */,
+				9252E59F3B6F94BA8668D7D0 /* movieFullscreen.png */,
+				1D6808090646F50AE12F1B03 /* movieFullscreen@2x.png */,
+				01FEF6191BA1127D998BF779 /* moviePause.png */,
+				E5DD95C18291CBBA2826CAD6 /* moviePause@2x.png */,
+				39F47B16D6819CFDA36BC8CD /* moviePlay.png */,
+				1597E25406F1C5788E6D7FD9 /* moviePlay@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5EEC6E6741666DD767611D22 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2E5E18BB8453AB2BC513266 /* Pods-EzvizRealPlayDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6E35021EB5B634554EE86137 = {
+			isa = PBXGroup;
+			children = (
+				F3612934C2228F4FFA2FCA02 /* Podfile */,
+				D1ADB08055D8914277951B38 /* Frameworks */,
+				E879329D5A8B93C1F2A3F77B /* Pods */,
+				0980A6C216251AD24D0D6FA1 /* Products */,
+				5EEC6E6741666DD767611D22 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86E7156942F99FC2B6D7A8BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AB01E33B8179D2FF11F07300 /* Foundation.framework */,
+				0FF66A95190102198E3CAACB /* MediaPlayer.framework */,
+				59F33E78A2F093AC2F3883C3 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D1ADB08055D8914277951B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86E7156942F99FC2B6D7A8BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2E5E18BB8453AB2BC513266 /* Pods-EzvizRealPlayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C6E6F5A50911FC791724090 /* Pods-EzvizRealPlayDemo-acknowledgements.markdown */,
+				61651D72C9CDB97828EB45AB /* Pods-EzvizRealPlayDemo-acknowledgements.plist */,
+				60339254183A219007FFB0C4 /* Pods-EzvizRealPlayDemo-dummy.m */,
+				2B499D6DFA47CAEA10991C73 /* Pods-EzvizRealPlayDemo-environment.h */,
+				F9694DEF0A8A36F2C1129AB7 /* Pods-EzvizRealPlayDemo-resources.sh */,
+				287E24A6473A60DDD1CA4451 /* Pods-EzvizRealPlayDemo.debug.xcconfig */,
+				4AD877481E839AE8BF76F85E /* Pods-EzvizRealPlayDemo.release.xcconfig */,
+			);
+			name = "Pods-EzvizRealPlayDemo";
+			path = "Target Support Files/Pods-EzvizRealPlayDemo";
+			sourceTree = "<group>";
+		};
+		E879329D5A8B93C1F2A3F77B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFC48976F6ED77CFCC112 /* ALMoviePlayerController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9D018F3C46264E517567EC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DBC11465D9F41231DF83FF4 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController.xcconfig */,
+				F6A9507A8EF6DF5B170044FA /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-Private.xcconfig */,
+				9BB908BBEECD46208E774A35 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-dummy.m */,
+				8706816B62718BCAF0A965A1 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-EzvizRealPlayDemo-ALMoviePlayerController";
+			sourceTree = "<group>";
+		};
+		F56BFC48976F6ED77CFCC112 /* ALMoviePlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EB54F0187D6BF6038E528 /* ALAirplayView.h */,
+				F928DF98B32E0DBCC9E29A04 /* ALAirplayView.m */,
+				AC2B2843EF5C02C9E02DF683 /* ALButton.h */,
+				2A845A7BA5B4F557ED115F81 /* ALButton.m */,
+				51576A49288C35795AF2F52A /* ALMoviePlayerController.h */,
+				B5693F55CFD0510EF9631822 /* ALMoviePlayerController.m */,
+				7BCED2068923768CCC9D0F77 /* ALMoviePlayerControls.h */,
+				F6737A7D88D61DF6EF41DD2A /* ALMoviePlayerControls.m */,
+				151D17A74E0F57A308F66BD5 /* Resources */,
+				E9D018F3C46264E517567EC5 /* Support Files */,
+			);
+			path = ALMoviePlayerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5071828D2FD8299A20A27DA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE3AFB6AA6FA70C6A1CEF79 /* ALAirplayView.h in Headers */,
+				DF4D8E01BC4C2C37B7E28E93 /* ALButton.h in Headers */,
+				E7941CCE127D03241F32FB6E /* ALMoviePlayerController.h in Headers */,
+				CCE4D985C6806805AC9BE7AD /* ALMoviePlayerControls.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48FE9F244C96FC5EC1FFDFFD /* Pods-EzvizRealPlayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56325114EA11D9D452BFF805 /* Build configuration list for PBXNativeTarget "Pods-EzvizRealPlayDemo" */;
+			buildPhases = (
+				9EABF7381F5EEC964F48B5D9 /* Sources */,
+				5391AE09ED1D6B012C7E5A07 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA5D3875F45C4D0AA0F99994 /* PBXTargetDependency */,
+			);
+			name = "Pods-EzvizRealPlayDemo";
+			productName = "Pods-EzvizRealPlayDemo";
+			productReference = 61F41EE2A1A9F1477D94C119 /* libPods-EzvizRealPlayDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DE5DDE0FA7BA9D808061938B /* Pods-EzvizRealPlayDemo-ALMoviePlayerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BAA6571EF7472E2D92143F8 /* Build configuration list for PBXNativeTarget "Pods-EzvizRealPlayDemo-ALMoviePlayerController" */;
+			buildPhases = (
+				50229A93519FD4E40328781B /* Sources */,
+				003F77EA24FDBF6E99077433 /* Frameworks */,
+				5071828D2FD8299A20A27DA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EzvizRealPlayDemo-ALMoviePlayerController";
+			productName = "Pods-EzvizRealPlayDemo-ALMoviePlayerController";
+			productReference = 1AC6EC31052DA9673C814542 /* libPods-EzvizRealPlayDemo-ALMoviePlayerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92749FA548ABACB607478EC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 65D4DB168EF60DD754B6C560 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E35021EB5B634554EE86137;
+			productRefGroup = 0980A6C216251AD24D0D6FA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48FE9F244C96FC5EC1FFDFFD /* Pods-EzvizRealPlayDemo */,
+				DE5DDE0FA7BA9D808061938B /* Pods-EzvizRealPlayDemo-ALMoviePlayerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50229A93519FD4E40328781B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AB30B64FB5D3861AF3647D /* ALAirplayView.m in Sources */,
+				E25C37E9B8A3BEE69802C2C8 /* ALButton.m in Sources */,
+				A334717F7DCBFC1E9173828E /* ALMoviePlayerController.m in Sources */,
+				0DFCF263ADE40113E7B75F0B /* ALMoviePlayerControls.m in Sources */,
+				6C7C76D285052FED9C417FA3 /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EABF7381F5EEC964F48B5D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004F6C173541505EA042B486 /* Pods-EzvizRealPlayDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA5D3875F45C4D0AA0F99994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EzvizRealPlayDemo-ALMoviePlayerController";
+			target = DE5DDE0FA7BA9D808061938B /* Pods-EzvizRealPlayDemo-ALMoviePlayerController */;
+			targetProxy = F9370440F46E4AD44E12D37F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10169FCC20802EB946AC1AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B1732AEE22A16B86DFCFD85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		812BF5A7232E80F0E4A6D48D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AD877481E839AE8BF76F85E /* Pods-EzvizRealPlayDemo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8577127AECDF1CC8E41BA56C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A9507A8EF6DF5B170044FA /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-Private.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EzvizRealPlayDemo-ALMoviePlayerController/Pods-EzvizRealPlayDemo-ALMoviePlayerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8F5CF6C105B36B5F2F6626C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287E24A6473A60DDD1CA4451 /* Pods-EzvizRealPlayDemo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F0E6F96D5B83B39350A33E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A9507A8EF6DF5B170044FA /* Pods-EzvizRealPlayDemo-ALMoviePlayerController-Private.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EzvizRealPlayDemo-ALMoviePlayerController/Pods-EzvizRealPlayDemo-ALMoviePlayerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56325114EA11D9D452BFF805 /* Build configuration list for PBXNativeTarget "Pods-EzvizRealPlayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F5CF6C105B36B5F2F6626C7 /* Debug */,
+				812BF5A7232E80F0E4A6D48D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BAA6571EF7472E2D92143F8 /* Build configuration list for PBXNativeTarget "Pods-EzvizRealPlayDemo-ALMoviePlayerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E6F96D5B83B39350A33E91 /* Debug */,
+				8577127AECDF1CC8E41BA56C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D4DB168EF60DD754B6C560 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B1732AEE22A16B86DFCFD85 /* Debug */,
+				10169FCC20802EB946AC1AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92749FA548ABACB607478EC1 /* Project object */;
+}

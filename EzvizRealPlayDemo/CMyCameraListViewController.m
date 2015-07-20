@@ -27,6 +27,7 @@
 #import "InfoViewController.h"
 #import "MainViewController.h"
 #import "ViewController.h"
+#import <PlayerViewController.h>
 
 @interface CMyCameraListViewController () <MyCameraListCellDelegate, UITableViewDataSource,
 UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
@@ -186,7 +187,14 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 //    realPlayController.cameraInfo = cameraInfo;
 //    [self.navigationController pushViewController:realPlayController animated:YES];
 //    [realPlayController release];
-    ViewController * mvc = [[ViewController alloc]init];
+    
+    
+//    ViewController * mvc = [[ViewController alloc]init];
+    
+    
+    PlayerViewController * mvc = [[PlayerViewController alloc] init];
+    
+    
     [self.navigationController pushViewController:mvc animated:NO];
     [mvc release];
 }

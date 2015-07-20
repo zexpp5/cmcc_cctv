@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ALMoviePlayerController/ALMoviePlayerController.h>
 
 @interface ViewController : UIViewController
 
