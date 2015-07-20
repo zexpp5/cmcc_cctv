@@ -98,8 +98,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 
     [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    
-    
+    self.view.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
 //    self.navigationItem.title = @"我的设备";
     UIColor *color = [UIColor blackColor];
     NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
@@ -130,7 +129,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [_indicator setHidden:YES];
     [_tableView setHidden:NO];
     
-    _tableView.frame = CGRectMake(0, 205+56, self.view.bounds.size.width, self.view.bounds.size.height-200);
+    _tableView.frame = CGRectMake(0, 205+56, self.view.frame.size.width, self.view.frame.size.height-200);
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addLargeImageView];//新加的大图片
     [self addTwoLargeBtn];

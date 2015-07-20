@@ -21,6 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.navigationController.navigationBarHidden = YES;
+   self.view.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+
     self.navigationItem.hidesBackButton = YES;
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
 

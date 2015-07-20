@@ -18,14 +18,14 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
-    
     NSMutableDictionary *dictServers = [NSMutableDictionary dictionary];
     [dictServers setObject:@"https://auth.ys7.com" forKey:kAuthServer];
     [dictServers setObject:@"https://open.ys7.com" forKey:kApiServer];
     [YSPlayerController loadSDKWithPlatfromServers:dictServers];
     
     [[YSHTTPClient sharedInstance] setClientAppKey:AppKey secret:AppSecret];
-    
+
+
 //    YSLoginViewController *rootController = [[YSLoginViewController alloc] initWithNibName:@"YSLoginViewController"
 //                           
 //                                                                                    bundle:nil];

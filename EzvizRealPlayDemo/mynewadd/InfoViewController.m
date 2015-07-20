@@ -25,7 +25,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
 
     [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];

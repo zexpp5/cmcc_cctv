@@ -21,14 +21,15 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+
     self.navigationController.navigationBarHidden = YES;
     
 
     UIImageView * imageView = [[UIImageView alloc]init];
 //    imageView.backgroundColor = [UIColor redColor];
     imageView.image = [UIImage imageNamed:@"spec.png"];
-    imageView.frame = CGRectMake(0, 0, 320, 568);
+    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:imageView];
     imageView.contentMode = UIViewContentModeScaleToFill;
     
