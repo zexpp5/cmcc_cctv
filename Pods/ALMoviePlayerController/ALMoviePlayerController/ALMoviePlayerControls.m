@@ -701,7 +701,7 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
             self.volumeView.alpha = 0.f;
         } else {
             self.volumeView.alpha = 1.f;
-            self.volumeView.frame = CGRectMake(43.8, 19, 40, 23);
+            self.volumeView.frame = CGRectMake(43.8, 17, 40, 23);
         }
         
         self.airplayView.frame = CGRectMake(self.bottomBar.frame.size.width - paddingFromBezel - airplayWidth, self.barHeight/2 - airplayHeight/2, airplayWidth, airplayHeight);
