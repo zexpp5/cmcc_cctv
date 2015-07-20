@@ -70,6 +70,7 @@
 }
 -(void)backClick
 {
+    [self.navigationController popViewControllerAnimated:NO];
 
 }
 -(void)viewWillAppear:(BOOL)animated
