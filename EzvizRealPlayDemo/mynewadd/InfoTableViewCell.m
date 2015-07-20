@@ -23,6 +23,7 @@
 - (void)dealloc {
     [_bigImage release];
     [_infoLable release];
+    [_timeLable release];
     [super dealloc];
 }
 @end

@@ -42,7 +42,18 @@
     [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
     
-    UITableView * tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,self.view.bounds.size.height-self.navigationController.navigationBar.frame.size.height) style:UITableViewStylePlain];
+    UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnAddDevice setFrame:CGRectMake(0, 0, 30, 22)];
+    [btnAddDevice setTitle:@"清理" forState:UIControlStateNormal];
+    btnAddDevice.titleLabel.font = [UIFont systemFontOfSize:15];
+   [btnAddDevice addTarget:self action:@selector(qingli) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    [rightItem release];
+    
+    
+    
+    UITableView * tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width,self.view.bounds.size.height-self.navigationController.navigationBar.frame.size.height-20) style:UITableViewStylePlain];
     tableView.delegate=self;
     tableView.dataSource=self;
     [self.view addSubview:tableView];
@@ -53,10 +64,13 @@
 
     
     
-    section_arr1=[[NSMutableArray alloc]initWithObjects:@"19:59:21",@"09:59:21",@"19:23:21",nil];
-    section_arr2=[[NSMutableArray alloc]initWithObjects:@"05:33:21",@"11:59:21",@"19:11:21", nil];
+    section_arr1=[[NSMutableArray alloc]initWithObjects:@"19:59:21",@"19:32:21",@"19:23:21",@"16:56:08",@"16:32:02",@"15:23:29",nil];
     
     // Do any additional setup after loading the view.
+}
+-(void)qingli
+{
+
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -87,17 +101,50 @@
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
     
 }
-
+//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    NSString * titile;
+//    if (section == 0) {
+//        titile=@"今天";
+//    }else
+//    {
+//        titile=@"6月21";
+//    }
+//    return titile;
+//    
+//}
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIImageView * imageView=[[UIImageView alloc]init];
+    imageView.frame=CGRectMake(0, 0, tableView.frame.size.width, 40);
+    imageView.backgroundColor = [UIColor lightGrayColor];
+    UILabel * lable=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
+    lable.backgroundColor=[UIColor clearColor];
+    lable.textColor=[UIColor blackColor];
+    lable.textAlignment=NSTextAlignmentCenter;
+    lable.font=[UIFont boldSystemFontOfSize:16];
+    if (section==0) {
+        lable.text=@"今天";
+    }else{
+        lable.text=@"6月21";
+    }
+    [imageView addSubview:lable];
+    return imageView;
+}
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 40.0;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 6;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 232.0f;
+    return 148.0f;
     
 }
 
@@ -109,6 +156,9 @@
     if (cell==nil) {
         cell=[[[NSBundle mainBundle]loadNibNamed:@"InfoTableViewCell" owner:self options:nil] lastObject ];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.timeLable.text = nil;
+    cell.timeLable.text = [section_arr1 objectAtIndex:indexPath.row];
        return cell;
     
 }

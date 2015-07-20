@@ -23,6 +23,7 @@
 - (void)dealloc {
     _delegate = nil;
     [_timeLable release];
+    
     [_lineImageView release];
     [_pointImageView release];
     [_PicImageView release];
