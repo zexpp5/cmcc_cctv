@@ -32,7 +32,19 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     
-    self.navigationItem.title = @"报警消息";
+//    self.navigationItem.title = @"报警消息";
+    
+    
+    UILabel *customLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 30)];
+    [customLab setTextColor:[UIColor whiteColor]];
+    [customLab setText:@"报警消息"];
+    customLab.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    self.navigationItem.titleView = customLab;
+    [customLab release];
+    
+    
+    
+    
     UIColor *color = [UIColor whiteColor];
     NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
     self.navigationController.navigationBar.titleTextAttributes = dict;
@@ -45,7 +57,7 @@
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnAddDevice setFrame:CGRectMake(0, 0, 30, 22)];
     [btnAddDevice setTitle:@"清理" forState:UIControlStateNormal];
-    btnAddDevice.titleLabel.font = [UIFont systemFontOfSize:15];
+    btnAddDevice.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:15];
    [btnAddDevice addTarget:self action:@selector(qingli) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
     self.navigationItem.rightBarButtonItem = rightItem;

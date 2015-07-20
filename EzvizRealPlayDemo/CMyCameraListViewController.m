@@ -237,7 +237,17 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationItem.title = @"我的设备";
+//    self.navigationItem.title = @"我的设备";
+//    eventLable.font=[UIFont fontWithName:@"Heiti TC" size:36];
+
+    
+    UILabel *customLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 30)];
+    [customLab setTextColor:[UIColor blackColor]];
+    [customLab setText:@"我的设备"];
+    customLab.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    self.navigationItem.titleView = customLab;
+    [customLab release];
+    
     UIColor *color = [UIColor blackColor];
     NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
     self.navigationController.navigationBar.titleTextAttributes = dict;
