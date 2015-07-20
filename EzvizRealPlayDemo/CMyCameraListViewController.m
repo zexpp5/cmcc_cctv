@@ -160,9 +160,9 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     leftImage.image = [UIImage imageNamed:@"jikong.png"];
    [leftBtn addSubview:leftImage];
     UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(55, 10, 80, 26)];
-    leftLable.font = [UIFont systemFontOfSize:15];
     leftLable.textColor = [UIColor whiteColor];
     leftLable.text = @"监测开启";
+    leftLable.font = [UIFont fontWithName:@"Heiti SC" size:15];
     [leftBtn addSubview:leftLable];
 
     
@@ -177,7 +177,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     rightImage.image = [UIImage imageNamed:@"refresh.png"];
     [rightBtn addSubview:rightImage];
     UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(55, 10, 80, 26)];
-    rightLable.font = [UIFont systemFontOfSize:15];
+    rightLable.font = [UIFont fontWithName:@"Heiti SC" size:15];
     rightLable.textColor = [UIColor whiteColor];
     rightLable.text = @"刷新影像";
     [rightBtn addSubview:rightLable];
@@ -240,6 +240,12 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 //    self.navigationItem.title = @"我的设备";
 //    eventLable.font=[UIFont fontWithName:@"Heiti TC" size:36];
 
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
+    UIColor *color = [UIColor blackColor];
+    NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
+    UIImage *backgroundImage = [self imageWithColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
     UILabel *customLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 30)];
     [customLab setTextColor:[UIColor blackColor]];
@@ -248,12 +254,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     self.navigationItem.titleView = customLab;
     [customLab release];
     
-    UIColor *color = [UIColor blackColor];
-    NSDictionary * dict=[NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
-    self.navigationController.navigationBar.titleTextAttributes = dict;
-    UIImage *backgroundImage = [self imageWithColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
-    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault];
+
 //    [self searchCameras];
 }
 
@@ -304,6 +305,9 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = [_timeArrayList objectAtIndex:indexPath.row];
 //    cell.dateLable.text = @"6月21日";
+    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:17];
+
+
     cell.picBtn.tag = indexPath.row;
     if (indexPath.row == 1) {
         cell.jingbaoImageView.image = [UIImage imageNamed:@"jingbaochudong.png"];

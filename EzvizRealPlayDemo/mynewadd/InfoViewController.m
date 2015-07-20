@@ -54,6 +54,15 @@
     [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
     
+    UIButton *leftAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
+    [leftAddDevice setBackgroundImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
+    [leftAddDevice addTarget:self action:@selector(backBtn) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftAddDevice];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    [leftItem release];
+    
+    
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnAddDevice setFrame:CGRectMake(0, 0, 30, 22)];
     [btnAddDevice setTitle:@"清理" forState:UIControlStateNormal];
@@ -80,6 +89,7 @@
     
     // Do any additional setup after loading the view.
 }
+
 -(void)qingli
 {
 
@@ -116,18 +126,7 @@
     return 2;
     
 }
-//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-//{
-//    NSString * titile;
-//    if (section == 0) {
-//        titile=@"今天";
-//    }else
-//    {
-//        titile=@"6月21";
-//    }
-//    return titile;
-//    
-//}
+
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIImageView * imageView=[[UIImageView alloc]init];
@@ -137,7 +136,9 @@
     lable.backgroundColor=[UIColor clearColor];
     lable.textColor=[UIColor blackColor];
     lable.textAlignment=NSTextAlignmentCenter;
-    lable.font=[UIFont fontWithName:@"Heiti SC" size:16];
+
+    lable.font = [UIFont fontWithName:@"Heiti SC" size:16];
+
     if (section==0) {
         lable.text=@"今天";
     }else{
@@ -171,6 +172,9 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = nil;
     cell.timeLable.text = [section_arr1 objectAtIndex:indexPath.row];
+    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    cell.nameLable.font = [UIFont fontWithName:@"Heiti SC" size:13];
+
        return cell;
     
 }

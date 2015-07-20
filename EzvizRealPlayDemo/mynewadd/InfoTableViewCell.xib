@@ -42,6 +42,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="bigImage" destination="NtU-uf-wgN" id="EO9-rC-eST"/>
+                <outlet property="nameLable" destination="MF4-TC-BIK" id="TV8-g7-Tl2"/>
                 <outlet property="timeLable" destination="IiD-cY-ZKs" id="yAo-38-iDK"/>
             </connections>
             <point key="canvasLocation" x="318.5" y="299.5"/>
