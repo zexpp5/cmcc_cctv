@@ -130,10 +130,10 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [_indicator setHidden:YES];
     [_tableView setHidden:NO];
     
-    _tableView.frame = CGRectMake(0, 205, self.view.bounds.size.width, self.view.bounds.size.height-200);
+    _tableView.frame = CGRectMake(0, 205+56, self.view.bounds.size.width, self.view.bounds.size.height-200);
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addLargeImageView];//新加的大图片
-//    [_timeArrayList addObjectsFromArray:@[@"19:59  6月21日",@"18:57  6月21日",@"11:03  6月21日",@"08:58  6月21日"] ];
+    [self addTwoLargeBtn];
      [_timeArrayList addObjectsFromArray:@[@"19:59",@"18:57",@"11:03",@"08:58"] ];
     
     YSMobilePages *mobilePage = [[YSMobilePages alloc] init];
@@ -145,6 +145,41 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     MyHomeViewController * homeVC = [[MyHomeViewController alloc]init];
     [self.navigationController pushViewController:homeVC animated:NO];
     [homeVC release];
+}
+-(void)addTwoLargeBtn
+{
+    UIView * backView = [[UIView alloc]initWithFrame:CGRectMake(0, largeImageBtn.frame.size.height, self.view.bounds.size.width, 56)];
+    [self.view addSubview:backView];
+     UIButton *leftBtn =[UIButton buttonWithType:UIButtonTypeCustom];
+    leftBtn.frame = CGRectMake(5, 5, (self.view.bounds.size.width-15)/2, 46);
+    [leftBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
+    [backView addSubview:leftBtn];
+    
+    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(30, 14, 18, 18)];
+    leftImage.image = [UIImage imageNamed:@"jikong.png"];
+   [leftBtn addSubview:leftImage];
+    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(55, 10, 80, 26)];
+    leftLable.font = [UIFont systemFontOfSize:15];
+    leftLable.textColor = [UIColor whiteColor];
+    leftLable.text = @"监测开启";
+    [leftBtn addSubview:leftLable];
+
+    
+
+    UIButton *rightBtn =[UIButton buttonWithType:UIButtonTypeCustom];
+    rightBtn.frame = CGRectMake(10+ leftBtn.frame.size.width, 5, (self.view.bounds.size.width-15)/2, 46);
+    [rightBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
+    [backView addSubview:rightBtn];
+    
+    
+    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(30, 14, 18, 18)];
+    rightImage.image = [UIImage imageNamed:@"refresh.png"];
+    [rightBtn addSubview:rightImage];
+    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(55, 10, 80, 26)];
+    rightLable.font = [UIFont systemFontOfSize:15];
+    rightLable.textColor = [UIColor whiteColor];
+    rightLable.text = @"刷新影像";
+    [rightBtn addSubview:rightLable];
 }
 -(void)addLargeImageView
 {

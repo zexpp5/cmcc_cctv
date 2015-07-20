@@ -80,6 +80,9 @@
 		D5CA754E1B4A6C53004C59F2 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = D5CA75481B4A6C53004C59F2 /* 4.png */; };
 		D5CA754F1B4A6C53004C59F2 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = D5CA75491B4A6C53004C59F2 /* 5.png */; };
 		D5CA75501B4A6C53004C59F2 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = D5CA754A1B4A6C53004C59F2 /* 6.png */; };
+		D5DE91C01B5C8854006B2549 /* greenbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = D5DE91BF1B5C8854006B2549 /* greenbtn.png */; };
+		D5DE91C31B5C8E37006B2549 /* jikong.png in Resources */ = {isa = PBXBuildFile; fileRef = D5DE91C11B5C8E37006B2549 /* jikong.png */; };
+		D5DE91C41B5C8E37006B2549 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = D5DE91C21B5C8E37006B2549 /* refresh.png */; };
 		D5FD03BB1B4CC47F00530DED /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = D5FD03BA1B4CC47F00530DED /* color.png */; };
 		DA7375821B528893008CADF5 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7375811B528893008CADF5 /* PlayerViewController.m */; };
 		DA7375841B52ACF6008CADF5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375831B52ACF6008CADF5 /* back.png */; };
@@ -345,6 +348,9 @@
 		D5CA75481B4A6C53004C59F2 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		D5CA75491B4A6C53004C59F2 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		D5CA754A1B4A6C53004C59F2 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		D5DE91BF1B5C8854006B2549 /* greenbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbtn.png; sourceTree = "<group>"; };
+		D5DE91C11B5C8E37006B2549 /* jikong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jikong.png; sourceTree = "<group>"; };
+		D5DE91C21B5C8E37006B2549 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
 		D5FD03BA1B4CC47F00530DED /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
 		DA7375801B528893008CADF5 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		DA7375811B528893008CADF5 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
@@ -832,6 +838,9 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				D5DE91C11B5C8E37006B2549 /* jikong.png */,
+				D5DE91C21B5C8E37006B2549 /* refresh.png */,
+				D5DE91BF1B5C8854006B2549 /* greenbtn.png */,
 				DA7375851B52B006008CADF5 /* playerImage */,
 				FA1622171B4ED23D00CE4964 /* spec.png */,
 				FA1622151B4ECC6B00CE4964 /* backpictrue.png */,
@@ -1174,6 +1183,7 @@
 				E361E5121A36CD4900974327 /* ptz_turn.png in Resources */,
 				E361E50B1A36CD4900974327 /* ptz_flip2.png in Resources */,
 				E334ADD41988A01000233190 /* play_close_sel.png in Resources */,
+				D5DE91C41B5C8E37006B2549 /* refresh.png in Resources */,
 				E334ADBE1988A01000233190 /* balanced.png in Resources */,
 				E371CADE1A20386500BA9049 /* button_red_sel.png in Resources */,
 				8CC28D38197BFCE80004BD81 /* pb_timebar_hour.jpg in Resources */,
@@ -1245,6 +1255,7 @@
 				E334ADDF1988A01000233190 /* previously_disable.png in Resources */,
 				E334ADEB1988A01000233190 /* video_disable.png in Resources */,
 				D5CA75371B4A54CB004C59F2 /* timeline.png in Resources */,
+				D5DE91C01B5C8854006B2549 /* greenbtn.png in Resources */,
 				E361E50A1A36CD4900974327 /* ptz_flip.png in Resources */,
 				E334ADDE1988A01000233190 /* playback_button_sel.png in Resources */,
 				D5CA753C1B4A59FE004C59F2 /* user.jpg in Resources */,
@@ -1302,6 +1313,7 @@
 				E371CADD1A20386500BA9049 /* button_red.png in Resources */,
 				D5CA753A1B4A55B5004C59F2 /* back.png in Resources */,
 				E334ADE81988A01000233190 /* talk.png in Resources */,
+				D5DE91C31B5C8E37006B2549 /* jikong.png in Resources */,
 				E334ADE31988A01000233190 /* speech.png in Resources */,
 				FA1622121B4EC3FC00CE4964 /* first.jpg in Resources */,
 				E371CADF1A20386500BA9049 /* circle1.png in Resources */,
