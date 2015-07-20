@@ -28,6 +28,7 @@
     [_PicImageView release];
     [_picBtn release];
     [_dateLable release];
+    [_jingbaoImageView release];
     [super dealloc];
 }
 - (IBAction)clickPicBtn:(id)sender {

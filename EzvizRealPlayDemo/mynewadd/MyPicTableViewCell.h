@@ -20,6 +20,7 @@
 @property (retain, nonatomic) IBOutlet UIImageView *pointImageView;
 @property (retain, nonatomic) IBOutlet UIImageView *PicImageView;
 @property (retain, nonatomic) IBOutlet UIButton *picBtn;
+@property (retain, nonatomic) IBOutlet UIImageView *jingbaoImageView;
 @property (nonatomic, assign) id<MyPicListCellDelegate> delegate;
 
 - (IBAction)clickPicBtn:(id)sender;
