@@ -49,14 +49,14 @@
     [self.view addSubview:bigImageView];
     [self addTwoLargeBtn];
     
-    UILabel * eventLable=[[UILabel alloc]initWithFrame:CGRectMake(10, 370, 140, 40)];
+    UILabel * eventLable=[[UILabel alloc]initWithFrame:CGRectMake(10, 480, 140, 40)];
     eventLable.backgroundColor=[UIColor clearColor];
     eventLable.textColor=[UIColor whiteColor];
     eventLable.textAlignment=NSTextAlignmentCenter;
     eventLable.font=[UIFont fontWithName:@"Heiti TC" size:36];
     eventLable.text=@"18:59:21";
     [self.view addSubview:eventLable];
-    UILabel * eventLable1=[[UILabel alloc]initWithFrame:CGRectMake(10, 392, 90, 40)];
+    UILabel * eventLable1=[[UILabel alloc]initWithFrame:CGRectMake(10, 502, 90, 40)];
     eventLable1.backgroundColor=[UIColor clearColor];
     eventLable1.textColor=[UIColor whiteColor];
     eventLable1.textAlignment=NSTextAlignmentCenter;
@@ -102,11 +102,11 @@
     [leftBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
     [backView addSubview:leftBtn];
     
-    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(35, 14, 21.6, 18)];
+    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(55, 14, 21.6, 18)];
     leftImage.image = [UIImage imageNamed:@"cloud.png"];
     [leftBtn addSubview:leftImage];
-    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(60, 10, 80, 26)];
-    leftLable.font = [UIFont systemFontOfSize:15];
+    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(80, 10, 80, 26)];
+    leftLable.font = [UIFont systemFontOfSize:19];
     leftLable.textColor = [UIColor whiteColor];
     leftLable.text = @"云存储";
     [leftBtn addSubview:leftLable];
@@ -119,11 +119,11 @@
     [backView addSubview:rightBtn];
     
     
-    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 11, 18, 22.14)];
+    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(65, 11, 18, 22.14)];
     rightImage.image = [UIImage imageNamed:@"delete.png"];
     [rightBtn addSubview:rightImage];
-    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
-    rightLable.font = [UIFont systemFontOfSize:15];
+    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(90, 10, 80, 26)];
+    rightLable.font = [UIFont systemFontOfSize:19];
     rightLable.textColor = [UIColor whiteColor];
     rightLable.text = @"删除";
     [rightBtn addSubview:rightLable];

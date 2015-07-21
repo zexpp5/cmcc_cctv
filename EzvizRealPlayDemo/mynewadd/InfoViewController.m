@@ -39,7 +39,7 @@
     UILabel *customLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 30)];
     [customLab setTextColor:[UIColor whiteColor]];
     [customLab setText:@"报警消息"];
-    customLab.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    customLab.font = [UIFont fontWithName:@"Heiti SC" size:19];
     self.navigationItem.titleView = customLab;
     [customLab release];
     
@@ -56,7 +56,7 @@
     
     
     UIButton *leftAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
+    [leftAddDevice setFrame:CGRectMake(0, 0, 24, 24)];
     [leftAddDevice setBackgroundImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
     [leftAddDevice addTarget:self action:@selector(backBtn) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftAddDevice];
@@ -67,7 +67,7 @@
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnAddDevice setFrame:CGRectMake(0, 0, 30, 22)];
     [btnAddDevice setTitle:@"清理" forState:UIControlStateNormal];
-    btnAddDevice.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    btnAddDevice.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:19];
    [btnAddDevice addTarget:self action:@selector(qingli) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
     self.navigationItem.rightBarButtonItem = rightItem;

@@ -129,7 +129,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [_indicator setHidden:YES];
     [_tableView setHidden:NO];
     
-    _tableView.frame = CGRectMake(0, 205+56, self.view.frame.size.width, self.view.frame.size.height-200);
+    _tableView.frame = CGRectMake(0, 205+56+40, self.view.frame.size.width, self.view.frame.size.height-200);
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addLargeImageView];//新加的大图片
     [self addTwoLargeBtn];
@@ -155,13 +155,13 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [leftBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
     [backView addSubview:leftBtn];
     
-    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(30, 14, 18, 18)];
+    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 14, 18, 18)];
     leftImage.image = [UIImage imageNamed:@"jikong.png"];
    [leftBtn addSubview:leftImage];
-    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(55, 10, 80, 26)];
+    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
     leftLable.textColor = [UIColor whiteColor];
     leftLable.text = @"监测开启";
-    leftLable.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    leftLable.font = [UIFont fontWithName:@"Heiti SC" size:19];
     [leftBtn addSubview:leftLable];
 
     
@@ -172,11 +172,11 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [backView addSubview:rightBtn];
     
     
-    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(30, 14, 18, 18)];
+    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 14, 18, 18)];
     rightImage.image = [UIImage imageNamed:@"refresh.png"];
     [rightBtn addSubview:rightImage];
-    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(55, 10, 80, 26)];
-    rightLable.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
+    rightLable.font = [UIFont fontWithName:@"Heiti SC" size:19];
     rightLable.textColor = [UIColor whiteColor];
     rightLable.text = @"刷新影像";
     [rightBtn addSubview:rightLable];
@@ -184,7 +184,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 -(void)addLargeImageView
 {
     largeImageBtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    largeImageBtn.frame = CGRectMake(0, 0, self.view.bounds.size.width, 200);
+    largeImageBtn.frame = CGRectMake(0, 0, self.view.bounds.size.width, 240);
 //    [largeImageBtn setTitle:@"直播" forState:UIControlStateNormal];
     largeImageBtn.backgroundColor = [UIColor grayColor];
 //    [largeImageBtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
@@ -249,7 +249,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     UILabel *customLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 30)];
     [customLab setTextColor:[UIColor blackColor]];
     [customLab setText:@"我的设备"];
-    customLab.font = [UIFont fontWithName:@"Heiti SC" size:15];
+    customLab.font = [UIFont fontWithName:@"Heiti SC" size:19];
     self.navigationItem.titleView = customLab;
     [customLab release];
     
