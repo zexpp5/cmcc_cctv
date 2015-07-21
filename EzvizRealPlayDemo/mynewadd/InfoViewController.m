@@ -67,7 +67,7 @@
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnAddDevice setFrame:CGRectMake(0, 0, 30, 22)];
     [btnAddDevice setTitle:@"清理" forState:UIControlStateNormal];
-    btnAddDevice.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:19];
+    btnAddDevice.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:15];
    [btnAddDevice addTarget:self action:@selector(qingli) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -158,7 +158,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 148.0f;
+    return 165.0f;
     
 }
 
@@ -173,8 +173,8 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = nil;
     cell.timeLable.text = [section_arr1 objectAtIndex:indexPath.row];
-    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:15];
-    cell.nameLable.font = [UIFont fontWithName:@"Heiti SC" size:13];
+    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:25];
+    cell.nameLable.font = [UIFont fontWithName:@"Heiti SC" size:16];
 
        return cell;
     

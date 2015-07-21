@@ -107,6 +107,8 @@
 		DA7375931B52B48B008CADF5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375921B52B48B008CADF5 /* play.png */; };
 		DADBE8E91B5CCDBE000E2192 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8E71B5CCDBE000E2192 /* cloud.png */; };
 		DADBE8EA1B5CCDBE000E2192 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8E81B5CCDBE000E2192 /* delete.png */; };
+		DADBE8ED1B5E91E0000E2192 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8EB1B5E91E0000E2192 /* black.png */; };
+		DADBE8EE1B5E91E0000E2192 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8EC1B5E91E0000E2192 /* red.png */; };
 		E30338431991019F00029175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30338421991019F00029175 /* Images.xcassets */; };
 		E310DEF419F79D410091B10E /* YSShowDeviceCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E310DEF219F79D410091B10E /* YSShowDeviceCaptureViewController.m */; };
 		E310DEF519F79D410091B10E /* YSShowDeviceCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E310DEF319F79D410091B10E /* YSShowDeviceCaptureViewController.xib */; };
@@ -389,6 +391,8 @@
 		DA7375921B52B48B008CADF5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		DADBE8E71B5CCDBE000E2192 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		DADBE8E81B5CCDBE000E2192 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		DADBE8EB1B5E91E0000E2192 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
+		DADBE8EC1B5E91E0000E2192 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		E30338421991019F00029175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E310DEF119F79D410091B10E /* YSShowDeviceCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSShowDeviceCaptureViewController.h; sourceTree = "<group>"; };
 		E310DEF219F79D410091B10E /* YSShowDeviceCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSShowDeviceCaptureViewController.m; sourceTree = "<group>"; };
@@ -862,6 +866,8 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				DADBE8EB1B5E91E0000E2192 /* black.png */,
+				DADBE8EC1B5E91E0000E2192 /* red.png */,
 				D5D7E8EB1B5CEAAB00478503 /* MyNavigationBar.h */,
 				D5D7E8EC1B5CEAAB00478503 /* MyNavigationBar.m */,
 				DADBE8E71B5CCDBE000E2192 /* cloud.png */,
@@ -1312,6 +1318,7 @@
 				E334ADDE1988A01000233190 /* playback_button_sel.png in Resources */,
 				D5CA753C1B4A59FE004C59F2 /* user.jpg in Resources */,
 				E334ADE01988A01000233190 /* setup.png in Resources */,
+				DADBE8EE1B5E91E0000E2192 /* red.png in Resources */,
 				D55DFADC1B479CC100EEC8EA /* 其他下拉.png in Resources */,
 				D5FD03BB1B4CC47F00530DED /* color.png in Resources */,
 				D55F15F31B4A4A5000EEF122 /* InfoTableViewCell.xib in Resources */,
@@ -1366,6 +1373,7 @@
 				E371CAE21A20386500BA9049 /* circle4.png in Resources */,
 				E371CADD1A20386500BA9049 /* button_red.png in Resources */,
 				D5CA753A1B4A55B5004C59F2 /* back.png in Resources */,
+				DADBE8ED1B5E91E0000E2192 /* black.png in Resources */,
 				D5D7E9231B5CF6A300478503 /* Default.png in Resources */,
 				E334ADE81988A01000233190 /* talk.png in Resources */,
 				D5DE91C31B5C8E37006B2549 /* jikong.png in Resources */,

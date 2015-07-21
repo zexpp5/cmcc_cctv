@@ -24,12 +24,11 @@
     _delegate = nil;
     [_timeLable release];
     
-    [_lineImageView release];
-    [_pointImageView release];
     [_PicImageView release];
     [_picBtn release];
     [_dateLable release];
     [_jingbaoImageView release];
+    [_blachredImageview release];
     [super dealloc];
 }
 - (IBAction)clickPicBtn:(id)sender {

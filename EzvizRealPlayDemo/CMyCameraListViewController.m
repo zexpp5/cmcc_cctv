@@ -188,7 +188,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 //    [largeImageBtn setTitle:@"直播" forState:UIControlStateNormal];
     largeImageBtn.backgroundColor = [UIColor grayColor];
 //    [largeImageBtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
-    [largeImageBtn setImage:[UIImage imageNamed:@"first.jpg"] forState:UIControlStateNormal];
+    [largeImageBtn setImage:[UIImage imageNamed:@"pictrue.png"] forState:UIControlStateNormal];
 
     [self.view addSubview:largeImageBtn];
     
@@ -304,12 +304,13 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = [_timeArrayList objectAtIndex:indexPath.row];
 //    cell.dateLable.text = @"6月21日";
-    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:17];
+    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:25];
 
 
     cell.picBtn.tag = indexPath.row;
     if (indexPath.row == 1) {
         cell.jingbaoImageView.image = [UIImage imageNamed:@"jingbaochudong.png"];
+        cell.blachredImageview.image = [UIImage imageNamed:@"red.png"];
     }
     
     return cell;
@@ -340,7 +341,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath

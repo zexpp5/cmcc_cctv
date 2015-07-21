@@ -489,7 +489,7 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
     [self monitorMoviePlayback]; //reset values
     [self hideControls:nil];
     self.state = ALMoviePlayerControlsStateIdle;
-//   [[NSNotificationCenter defaultCenter]postNotificationName:@"finishmovie" object:nil];
+    [self.moviePlayer play];
     
 }
 

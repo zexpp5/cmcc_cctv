@@ -15,11 +15,11 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pictrue.png" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-BH-VVy">
-                        <rect key="frame" x="150" y="3" width="255" height="170"/>
+                        <rect key="frame" x="150" y="3" width="261" height="170"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5R-zF-EB2">
-                        <rect key="frame" x="150" y="0.0" width="255" height="177"/>
+                        <rect key="frame" x="150" y="0.0" width="261" height="177"/>
                         <state key="normal">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -27,31 +27,34 @@
                             <action selector="clickPicBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cRY-iO-Eev"/>
                         </connections>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline.png" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-p2-WtE">
-                        <rect key="frame" x="115" y="0.0" width="17" height="180"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0di-Xs-PHS">
                         <rect key="frame" x="0.0" y="30" width="60" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCh-7Y-dtW">
-                        <rect key="frame" x="354" y="16" width="42" height="35"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imF-kK-esa">
-                        <rect key="frame" x="3" y="0.0" width="70" height="30"/>
+                        <rect key="frame" x="3" y="0.0" width="99" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCh-7Y-dtW">
+                        <rect key="frame" x="360" y="16" width="42" height="35"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="black.png" translatesAutoresizingMaskIntoConstraints="NO" id="zq5-WZ-L70">
+                        <rect key="frame" x="115" y="0.0" width="24" height="24"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Twp-sD-DEY">
+                        <rect key="frame" x="127" y="22" width="1" height="160"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="PicImageView" destination="GcB-BH-VVy" id="4A6-VL-TZ5"/>
+                <outlet property="blachredImageview" destination="zq5-WZ-L70" id="1sm-Qw-gPh"/>
                 <outlet property="dateLable" destination="0di-Xs-PHS" id="J6E-is-5D9"/>
                 <outlet property="jingbaoImageView" destination="ZCh-7Y-dtW" id="20v-sw-cra"/>
-                <outlet property="lineImageView" destination="qRt-p2-WtE" id="RyJ-UB-CqK"/>
                 <outlet property="picBtn" destination="c5R-zF-EB2" id="cSl-iS-xdf"/>
                 <outlet property="timeLable" destination="imF-kK-esa" id="iq3-CS-HlO"/>
             </connections>
@@ -59,7 +62,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="black.png" width="74" height="74"/>
         <image name="pictrue.png" width="1024" height="690"/>
-        <image name="timeline.png" width="50" height="530"/>
+        <image name="timeline1.png" width="3" height="406"/>
     </resources>
 </document>

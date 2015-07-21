@@ -89,6 +89,8 @@
     lable.textAlignment=NSTextAlignmentCenter;
     lable.textColor=[UIColor whiteColor];
     lable.backgroundColor=[UIColor clearColor];
+    lable.font = [UIFont fontWithName:@"Heiti SC" size:19];
+
     [self addSubview:lable];
     
 
@@ -111,7 +113,7 @@
     UIImage * image=[UIImage imageNamed:imageName];
     if (isLeft) {
         //左侧按钮
-        btn.frame=CGRectMake(10, 10, 24,24);
+        btn.frame=CGRectMake(20, 10, 24,24);
         btn.tag=1;//设置左侧按钮默认的tag为1
     }else{
     //右侧按钮

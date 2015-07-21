@@ -43,7 +43,7 @@
     [self.moviePlayer setControls:movieControls];
     [self.view addSubview:self.moviePlayer.view];
     [self.moviePlayer setContentURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/myvideo.mp4",[[NSBundle mainBundle] resourcePath]]]];
-    
+
     
     double delayInSeconds = 0.3;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
@@ -56,14 +56,13 @@
   
     [self.moviePlayer setFullscreen:!self.moviePlayer.isFullscreen animated:YES];
     [self configureViewForOrientation:UIInterfaceOrientationLandscapeLeft];
-
     
 }
 -(void)finishmovie
 {
     [self.moviePlayer stop];
     [self.moviePlayer release];
-    [self.navigationController popToRootViewControllerAnimated:NO];
+    NSLog(@"============");
 }
 
 - (void)configureViewForOrientation:(UIInterfaceOrientation)orientation {
