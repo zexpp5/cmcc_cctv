@@ -39,7 +39,7 @@
     UIImageView *bigImageView = [[UIImageView alloc] init];
     bigImageView.contentMode = UIViewContentModeScaleAspectFit;
     bigImageView.frame = CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height);
-    UIImage *image = [UIImage imageNamed:@"pictrue.png"];
+    UIImage *image = [UIImage imageNamed:@"changepic.png"];
     bigImageView.image = image;
     bigImageView.userInteractionEnabled = YES;
     UITapGestureRecognizer *singleTap =
