@@ -103,10 +103,10 @@
     [leftBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
     [backView addSubview:leftBtn];
     
-    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(55, 14, 20, 18)];
+    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(60, 14, 20, 18)];
     leftImage.image = [UIImage imageNamed:@"cloud.png"];
     [leftBtn addSubview:leftImage];
-    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(80, 10, 80, 26)];
+    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(85, 10, 80, 26)];
     leftLable.font = [UIFont systemFontOfSize:15];
     leftLable.textColor = [UIColor whiteColor];
     leftLable.text = @"云存储";
@@ -120,10 +120,10 @@
     [backView addSubview:rightBtn];
     
     
-    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(65, 11, 18, 22.14)];
+    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(75, 11, 18, 22.14)];
     rightImage.image = [UIImage imageNamed:@"delete.png"];
     [rightBtn addSubview:rightImage];
-    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(90, 10, 80, 26)];
+    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(100, 10, 80, 26)];
     rightLable.font = [UIFont systemFontOfSize:15];
     rightLable.textColor = [UIColor whiteColor];
     rightLable.text = @"删除";
