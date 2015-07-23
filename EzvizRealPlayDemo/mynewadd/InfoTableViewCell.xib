@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pictrue.png" translatesAutoresizingMaskIntoConstraints="NO" id="NtU-uf-wgN">
-                        <rect key="frame" x="143" y="5" width="259" height="141"/>
+                        <rect key="frame" x="143" y="5" width="259" height="146"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="徐大鹏的卧室" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF4-TC-BIK">
                         <rect key="frame" x="10" y="27" width="103" height="21"/>
@@ -27,7 +27,7 @@
                         <rect key="frame" x="10" y="8" width="15" height="15"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color.png" translatesAutoresizingMaskIntoConstraints="NO" id="kea-qy-BUn">
-                        <rect key="frame" x="143" y="91" width="250" height="53"/>
+                        <rect key="frame" x="143" y="91" width="250" height="60"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-cY-ZKs">
                         <rect key="frame" x="30" y="1" width="103" height="30"/>

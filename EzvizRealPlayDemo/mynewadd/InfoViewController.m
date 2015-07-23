@@ -55,7 +55,7 @@
     
     
     UIButton *leftAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftAddDevice setFrame:CGRectMake(0, 0, 24, 24)];
+    [leftAddDevice setFrame:CGRectMake(0, 0, 11, 19.7)];
     [leftAddDevice setBackgroundImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
     [leftAddDevice addTarget:self action:@selector(backBtn) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftAddDevice];
@@ -166,7 +166,7 @@ self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 155.0f;
+    return 160.0f;
     
 }
 
@@ -190,6 +190,7 @@ self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     cell.blakBackgroundIMage.layer.masksToBounds = YES;
     if (indexPath.row == 1 ) {
         cell.smallImage.image = [UIImage imageNamed:@"baojingxiaoxi.png"];
+        cell.bigImage.image = [UIImage imageNamed:@"picture11.png"];
         [cell.timeLable setTextColor:[UIColor colorWithRed:223.0 / 255.0 green:83.0/255.0 blue:97.0/255.0 alpha:alphaStage]];
     }
 

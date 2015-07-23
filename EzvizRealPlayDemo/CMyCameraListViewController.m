@@ -317,7 +317,8 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     cell.PicImageView.layer.masksToBounds = YES;
     cell.picBtn.tag = indexPath.row;
     if (indexPath.row == 1) {
-        cell.jingbaoImageView.image = [UIImage imageNamed:@"jingbaochudong.png"];
+//        cell.jingbaoImageView.image = [UIImage imageNamed:@"jingbaochudong.png"];
+        cell.PicImageView.image = [UIImage imageNamed:@"picture1.png"];
         cell.blachredImageview.image = [UIImage imageNamed:@"red.png"];
         [cell.timeLable setTextColor:[UIColor colorWithRed:223.0 / 255.0 green:83.0/255.0 blue:97.0/255.0 alpha:alphaStage]];
 
@@ -348,7 +349,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    return 98;
-    return 155;
+    return 156;
 }
 
 
