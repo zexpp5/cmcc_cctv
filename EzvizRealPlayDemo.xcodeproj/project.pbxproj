@@ -44,6 +44,7 @@
 		8CC28D3E197BFCE80004BD81 /* playback_playbar_progress.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC28D35197BFCE80004BD81 /* playback_playbar_progress.png */; };
 		8CC28D45197C0C8A0004BD81 /* full_pause_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC28D43197C0C8A0004BD81 /* full_pause_sel.png */; };
 		8CC28D46197C0C8A0004BD81 /* full_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC28D44197C0C8A0004BD81 /* full_pause.png */; };
+		D54FD4261B60EAF3002FB559 /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = D54FD4251B60EAF3002FB559 /* back1.png */; };
 		D55DFAD81B479CC100EEC8EA /* 下拉分割线.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFAC71B479CC100EEC8EA /* 下拉分割线.png */; };
 		D55DFAD91B479CC100EEC8EA /* 下拉第一条.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFAC81B479CC100EEC8EA /* 下拉第一条.png */; };
 		D55DFADA1B479CC100EEC8EA /* 下拉箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = D55DFAC91B479CC100EEC8EA /* 下拉箭头.png */; };
@@ -97,7 +98,6 @@
 		D5DE91CA1B5CA100006B2549 /* baojingxiaoxi.png in Resources */ = {isa = PBXBuildFile; fileRef = D5DE91C81B5CA100006B2549 /* baojingxiaoxi.png */; };
 		D5FD03BB1B4CC47F00530DED /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = D5FD03BA1B4CC47F00530DED /* color.png */; };
 		DA7375821B528893008CADF5 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7375811B528893008CADF5 /* PlayerViewController.m */; };
-		DA7375841B52ACF6008CADF5 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375831B52ACF6008CADF5 /* back.png */; };
 		DA73758C1B52B085008CADF5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375861B52B085008CADF5 /* button.png */; };
 		DA73758D1B52B085008CADF5 /* capture.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375871B52B085008CADF5 /* capture.png */; };
 		DA73758E1B52B085008CADF5 /* fluent.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7375881B52B085008CADF5 /* fluent.png */; };
@@ -326,6 +326,7 @@
 		B93EBD5F2370AF0081861F74 /* libPods-EzvizRealPlayDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EzvizRealPlayDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A3958740F04BB745487A11 /* Pods-EzvizRealPlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzvizRealPlayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzvizRealPlayDemo/Pods-EzvizRealPlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0303D5F92574F32C2F386CA /* Pods-EzvizRealPlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzvizRealPlayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzvizRealPlayDemo/Pods-EzvizRealPlayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D54FD4251B60EAF3002FB559 /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = "<group>"; };
 		D55DFAC71B479CC100EEC8EA /* 下拉分割线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉分割线.png"; sourceTree = "<group>"; };
 		D55DFAC81B479CC100EEC8EA /* 下拉第一条.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉第一条.png"; sourceTree = "<group>"; };
 		D55DFAC91B479CC100EEC8EA /* 下拉箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下拉箭头.png"; sourceTree = "<group>"; };
@@ -387,7 +388,6 @@
 		D5FD03BA1B4CC47F00530DED /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
 		DA7375801B528893008CADF5 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		DA7375811B528893008CADF5 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
-		DA7375831B52ACF6008CADF5 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		DA7375861B52B085008CADF5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		DA7375871B52B085008CADF5 /* capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capture.png; sourceTree = "<group>"; };
 		DA7375881B52B085008CADF5 /* fluent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fluent.png; sourceTree = "<group>"; };
@@ -878,6 +878,7 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				D54FD4251B60EAF3002FB559 /* back1.png */,
 				DADBE8F71B60DF28000E2192 /* picture1.png */,
 				DADBE8F81B60DF28000E2192 /* picture11.png */,
 				DADBE8F51B60CBC9000E2192 /* balcktime.png */,
@@ -947,7 +948,6 @@
 			isa = PBXGroup;
 			children = (
 				DA7375921B52B48B008CADF5 /* play.png */,
-				DA7375831B52ACF6008CADF5 /* back.png */,
 				DA7375861B52B085008CADF5 /* button.png */,
 				DA7375871B52B085008CADF5 /* capture.png */,
 				DA7375881B52B085008CADF5 /* fluent.png */,
@@ -1351,7 +1351,6 @@
 				E334ADD11988A01000233190 /* number_bg.png in Resources */,
 				E30338431991019F00029175 /* Images.xcassets in Resources */,
 				E334ADEA1988A01000233190 /* video.png in Resources */,
-				DA7375841B52ACF6008CADF5 /* back.png in Resources */,
 				D5CA754E1B4A6C53004C59F2 /* 4.png in Resources */,
 				8CC28D3B197BFCE80004BD81 /* playback_fullscreen_progress.png in Resources */,
 				E361E5101A36CD4900974327 /* ptz_right.png in Resources */,
@@ -1394,6 +1393,7 @@
 				FA16220E1B4EBFC600CE4964 /* Icon.png in Resources */,
 				E371CAE21A20386500BA9049 /* circle4.png in Resources */,
 				E371CADD1A20386500BA9049 /* button_red.png in Resources */,
+				D54FD4261B60EAF3002FB559 /* back1.png in Resources */,
 				D5CA753A1B4A55B5004C59F2 /* back.png in Resources */,
 				DADBE8ED1B5E91E0000E2192 /* black.png in Resources */,
 				D5D7E9231B5CF6A300478503 /* Default.png in Resources */,

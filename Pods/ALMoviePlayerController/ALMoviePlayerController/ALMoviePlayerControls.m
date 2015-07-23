@@ -157,13 +157,13 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
         
         _fullscreenButton = [[ALButton alloc] init];
 //        [_fullscreenButton setTitle:@"Done" forState:UIControlStateNormal];
-        [_fullscreenButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
+        [_fullscreenButton setImage:[UIImage imageNamed:@"back1.png"] forState:UIControlStateNormal];
         [_fullscreenButton setTitleShadowColor:[UIColor blackColor] forState:UIControlStateNormal];
         _fullscreenButton.titleLabel.shadowOffset = CGSizeMake(1.f, 1.f);
         [_fullscreenButton.titleLabel setFont:[UIFont systemFontOfSize:14.f]];
         _fullscreenButton.delegate = self;
         [_fullscreenButton addTarget:self action:@selector(fullscreenPressed:) forControlEvents:UIControlEventTouchUpInside];
-        _fullscreenButton.bounds = CGRectMake(0, 0, 35, 35);
+        _fullscreenButton.bounds = CGRectMake(0, 0, 11, 19);
         [_topBar addSubview:_fullscreenButton];
         
 //        _scaleButton = [[ALButton alloc] init];
@@ -682,7 +682,7 @@ static const CGFloat iPhoneScreenPortraitWidth = 320.f;
         CGFloat scaleWidth = 28.f;
         CGFloat scaleHeight = 28.f;
         self.topBar.frame = CGRectMake(0, 0, self.frame.size.width, self.barHeight);
-        self.fullscreenButton.frame = CGRectMake(14, 14, 30, 30);
+        self.fullscreenButton.frame = CGRectMake(14, 14, 11, 19);
         self.timeElapsedLabel.frame = CGRectMake(self.fullscreenButton.frame.origin.x + self.fullscreenButton.frame.size.width + paddingBetweenButtons, 0, labelWidth, self.barHeight);
         self.scaleButton.frame = CGRectMake(self.topBar.frame.size.width - paddingFromBezel - scaleWidth, self.barHeight/2 - scaleHeight/2, scaleWidth, scaleHeight);
         self.timeRemainingLabel.frame = CGRectMake(self.scaleButton.frame.origin.x - paddingBetweenButtons - labelWidth, 0, labelWidth, self.barHeight);
