@@ -38,7 +38,7 @@
     
     UIImageView *bigImageView = [[UIImageView alloc] init];
     bigImageView.contentMode = UIViewContentModeScaleAspectFit;
-    bigImageView.frame = CGRectMake(0, -30,self.view.bounds.size.width, self.view.bounds.size.height);
+    bigImageView.frame = CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height);
     UIImage *image = [UIImage imageNamed:@"pictrue.png"];
     bigImageView.image = image;
     bigImageView.userInteractionEnabled = YES;
