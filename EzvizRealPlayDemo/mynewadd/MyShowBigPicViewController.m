@@ -15,7 +15,10 @@
 @implementation MyShowBigPicViewController
 {
     UIButton * largeImageBtn;
-    
+    MyNavigationBar * myNavigationBar;
+    UIView * backView;
+    bool isHidden;
+    UIImageView *bigImageView;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +39,7 @@
   self.view.backgroundColor = [UIColor blackColor];
 
     
-    UIImageView *bigImageView = [[UIImageView alloc] init];
+    bigImageView = [[UIImageView alloc] init];
     bigImageView.contentMode = UIViewContentModeScaleAspectFit;
     bigImageView.frame = CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height);
     UIImage *image = [UIImage imageNamed:@"changepic.png"];
@@ -64,15 +67,17 @@
 //    eventLable1.text=@"2015年6月21日";
 //    [self.view addSubview:eventLable1];
     
-    MyNavigationBar * myNavigationBar=[[MyNavigationBar alloc]init];
+    myNavigationBar=[[MyNavigationBar alloc]init];
     myNavigationBar.frame=CGRectMake(0, 20, self.view.bounds.size.width, 44);
     [myNavigationBar   createMyNavigationBarWithBackGroundImage:@"" andTitle:@"报警消息" andTitleImageName:@"" andLeftBBIImageName:@"back1.png" andRightBBIImageName:@"" andClass:self andSEL:@selector(backClick)];
     
     [self.view addSubview:myNavigationBar];
+    isHidden = NO;
 
 }
 -(void)backClick
 {
+    
     [self.navigationController popViewControllerAnimated:NO];
 
 }
@@ -87,7 +92,30 @@
 }
 - (void)finishLoadImage
 {
-    [self.navigationController popViewControllerAnimated:NO];
+    if(isHidden){
+//        bigImageView.image = [UIImage imageNamed:@"changepic.png"];
+        isHidden=NO;
+//        [self.view addSubview:myNavigationBar];
+        //        myNavigationBar.hidden = NO;
+//        [self.view addSubview:backView];
+//        backView.hidden = NO;
+        
+        
+        //TODO
+        
+    }else{
+//        bigImageView.image = [UIImage imageNamed:@"pictrue.png"];
+
+        isHidden=YES;
+//        [myNavigationBar removeFromSuperview];
+        //        myNavigationBar.hidden = YES;
+//        [backView removeFromSuperview];
+//        backView.hidden = YES;
+
+    }
+    
+    
+//    [self.navigationController popViewControllerAnimated:NO];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -96,7 +124,7 @@
 
 -(void)addTwoLargeBtn
 {
-    UIView * backView = [[UIView alloc]initWithFrame:CGRectMake(0, largeImageBtn.frame.size.height, self.view.bounds.size.width, 56)];
+   backView = [[UIView alloc]initWithFrame:CGRectMake(0, largeImageBtn.frame.size.height, self.view.bounds.size.width, 56)];
     [self.view addSubview:backView];
     UIButton *leftBtn =[UIButton buttonWithType:UIButtonTypeCustom];
     leftBtn.frame = CGRectMake(5, self.view.bounds.size.height-51, (self.view.bounds.size.width-15)/2-2, 46);
