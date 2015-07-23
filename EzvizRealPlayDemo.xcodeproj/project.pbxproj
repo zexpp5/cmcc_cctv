@@ -1609,8 +1609,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zexu Lin (658VAC848D)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zexu Lin (658VAC848D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EzvizRealPlayDemo/EzvizRealPlayDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1654,8 +1654,8 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zexu Lin (658VAC848D)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zexu Lin (658VAC848D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EzvizRealPlayDemo/EzvizRealPlayDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
