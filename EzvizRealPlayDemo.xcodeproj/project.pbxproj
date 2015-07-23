@@ -109,6 +109,10 @@
 		DADBE8EA1B5CCDBE000E2192 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8E81B5CCDBE000E2192 /* delete.png */; };
 		DADBE8ED1B5E91E0000E2192 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8EB1B5E91E0000E2192 /* black.png */; };
 		DADBE8EE1B5E91E0000E2192 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8EC1B5E91E0000E2192 /* red.png */; };
+		DADBE8F01B60C12B000E2192 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8EF1B60C12B000E2192 /* eye.png */; };
+		DADBE8F31B60C183000E2192 /* greenbtn_left.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8F11B60C183000E2192 /* greenbtn_left.png */; };
+		DADBE8F41B60C183000E2192 /* greenbtn_right.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8F21B60C183000E2192 /* greenbtn_right.png */; };
+		DADBE8F61B60CBC9000E2192 /* balcktime.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8F51B60CBC9000E2192 /* balcktime.png */; };
 		E30338431991019F00029175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30338421991019F00029175 /* Images.xcassets */; };
 		E310DEF419F79D410091B10E /* YSShowDeviceCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E310DEF219F79D410091B10E /* YSShowDeviceCaptureViewController.m */; };
 		E310DEF519F79D410091B10E /* YSShowDeviceCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E310DEF319F79D410091B10E /* YSShowDeviceCaptureViewController.xib */; };
@@ -393,6 +397,10 @@
 		DADBE8E81B5CCDBE000E2192 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		DADBE8EB1B5E91E0000E2192 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		DADBE8EC1B5E91E0000E2192 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		DADBE8EF1B60C12B000E2192 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		DADBE8F11B60C183000E2192 /* greenbtn_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbtn_left.png; sourceTree = "<group>"; };
+		DADBE8F21B60C183000E2192 /* greenbtn_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbtn_right.png; sourceTree = "<group>"; };
+		DADBE8F51B60CBC9000E2192 /* balcktime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balcktime.png; sourceTree = "<group>"; };
 		E30338421991019F00029175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E310DEF119F79D410091B10E /* YSShowDeviceCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSShowDeviceCaptureViewController.h; sourceTree = "<group>"; };
 		E310DEF219F79D410091B10E /* YSShowDeviceCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSShowDeviceCaptureViewController.m; sourceTree = "<group>"; };
@@ -866,6 +874,10 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				DADBE8F51B60CBC9000E2192 /* balcktime.png */,
+				DADBE8F11B60C183000E2192 /* greenbtn_left.png */,
+				DADBE8F21B60C183000E2192 /* greenbtn_right.png */,
+				DADBE8EF1B60C12B000E2192 /* eye.png */,
 				DADBE8EB1B5E91E0000E2192 /* black.png */,
 				DADBE8EC1B5E91E0000E2192 /* red.png */,
 				D5D7E8EB1B5CEAAB00478503 /* MyNavigationBar.h */,
@@ -1233,6 +1245,7 @@
 				8CC28D45197C0C8A0004BD81 /* full_pause_sel.png in Resources */,
 				8CC28D3A197BFCE80004BD81 /* playback_fullscreen_playbarline.png in Resources */,
 				E361E5121A36CD4900974327 /* ptz_turn.png in Resources */,
+				DADBE8F41B60C183000E2192 /* greenbtn_right.png in Resources */,
 				E361E50B1A36CD4900974327 /* ptz_flip2.png in Resources */,
 				E334ADD41988A01000233190 /* play_close_sel.png in Resources */,
 				D5DE91C41B5C8E37006B2549 /* refresh.png in Resources */,
@@ -1308,6 +1321,8 @@
 				E361E5111A36CD4900974327 /* ptz_right_sel.png in Resources */,
 				D55DFADB1B479CC100EEC8EA /* 储存按键.png in Resources */,
 				E371CAED1A20386500BA9049 /* lineConnect.png in Resources */,
+				DADBE8F61B60CBC9000E2192 /* balcktime.png in Resources */,
+				DADBE8F01B60C12B000E2192 /* eye.png in Resources */,
 				D5DE91C91B5CA100006B2549 /* timeline1.png in Resources */,
 				E334ADCD1988A01000233190 /* full_video_sel.png in Resources */,
 				E334ADDF1988A01000233190 /* previously_disable.png in Resources */,
@@ -1401,6 +1416,7 @@
 				8CC28D37197BFCE80004BD81 /* pb_timebar_fullscreen.png in Resources */,
 				E371CAE61A20386500BA9049 /* connect1.png in Resources */,
 				D55F15AE1B4A200300EEF122 /* home_icon_02.png in Resources */,
+				DADBE8F31B60C183000E2192 /* greenbtn_left.png in Resources */,
 				E371CAE91A20386500BA9049 /* connect4.png in Resources */,
 				E36D04841977E442000CFEE4 /* MyCameraListCell.xib in Resources */,
 				E34FEA08198B923900701AD6 /* EzvizOpenSDKBundle.bundle in Resources */,

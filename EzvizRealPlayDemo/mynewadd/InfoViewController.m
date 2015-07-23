@@ -50,7 +50,7 @@
     self.navigationController.navigationBar.titleTextAttributes = dict;
     
     
-    UIImage *backgroundImage = [self imageWithColor:[UIColor blackColor]];
+    UIImage *backgroundImage = [self imageWithColor:[UIColor colorWithRed:25.0 / 255.0 green:33.0/ 255.0 blue:44.0/255.0 alpha:alphaStage]];
     [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
     
@@ -65,7 +65,7 @@
     
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnAddDevice setFrame:CGRectMake(0, 0, 30, 22)];
-    [btnAddDevice setTitle:@"清理" forState:UIControlStateNormal];
+    [btnAddDevice setTitle:@"清空" forState:UIControlStateNormal];
     btnAddDevice.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:15];
    [btnAddDevice addTarget:self action:@selector(qingli) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:btnAddDevice];
@@ -85,7 +85,7 @@
 
     
     
-    section_arr1=[[NSMutableArray alloc]initWithObjects:@"19:59:21",@"19:32:21",@"19:23:21",@"16:56:08",@"16:32:02",@"15:23:29",nil];
+    section_arr1=[[NSMutableArray alloc]initWithObjects:@"19:59:21",@"19:32:21",@"15:23:29",nil];
     UIPanGestureRecognizer * pan=[[UIPanGestureRecognizer alloc]init];
     [pan addTarget:self action:@selector(pan:)];
 //    [self.view addGestureRecognizer:pan];
@@ -137,9 +137,10 @@ self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
+    
     UIImageView * imageView=[[UIImageView alloc]init];
     imageView.frame=CGRectMake(0, 0, tableView.frame.size.width, 40);
-    imageView.backgroundColor = [UIColor colorWithRed:247.0f/255.0f green:248.0f/255.0f blue:248.0f/255.0f alpha:0.5];
+    imageView.backgroundColor = [UIColor colorWithRed:247.0f/255.0f green:248.0f/255.0f blue:248.0f/255.0f alpha:alphaStage];
     UILabel * lable=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
     lable.backgroundColor=[UIColor clearColor];
     lable.textColor=[UIColor blackColor];
@@ -148,9 +149,9 @@ self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     lable.font = [UIFont fontWithName:@"Heiti SC" size:16];
 
     if (section==0) {
-        lable.text=@"今天";
+        lable.text=@"- 今天 -";
     }else{
-        lable.text=@"6月21日";
+        lable.text=@"- 6月21日 -";
     }
     [imageView addSubview:lable];
     return imageView;
@@ -161,11 +162,11 @@ self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 3;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 165.0f;
+    return 155.0f;
     
 }
 
@@ -180,14 +181,16 @@ self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = nil;
     cell.timeLable.text = [section_arr1 objectAtIndex:indexPath.row];
-    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:25];
-    cell.nameLable.font = [UIFont fontWithName:@"Heiti SC" size:16];
+    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:18];
+    cell.nameLable.font = [UIFont fontWithName:@"Heiti SC" size:13];
+    [cell.timeLable setTextColor:[UIColor colorWithRed:102.0 / 255.0 green:102.0/255.0 blue:102.0/255.0 alpha:alphaStage]];
     cell.bigImage.layer.cornerRadius = 6;
     cell.bigImage.layer.masksToBounds = YES;
     cell.blakBackgroundIMage.layer.cornerRadius = 6;
     cell.blakBackgroundIMage.layer.masksToBounds = YES;
     if (indexPath.row == 1 ) {
         cell.smallImage.image = [UIImage imageNamed:@"baojingxiaoxi.png"];
+        [cell.timeLable setTextColor:[UIColor colorWithRed:223.0 / 255.0 green:83.0/255.0 blue:97.0/255.0 alpha:alphaStage]];
     }
 
        return cell;

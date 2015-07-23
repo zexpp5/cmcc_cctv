@@ -105,7 +105,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     self.navigationController.navigationBar.titleTextAttributes = dict;
     
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftBtn setFrame:CGRectMake(0, 0, 22, 22)];
+    [leftBtn setFrame:CGRectMake(0, 0, 16.3, 20)];
     //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
     [leftBtn addTarget:self action:@selector(myhomeview) forControlEvents:UIControlEventTouchUpInside];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"home_icon_02"] forState:UIControlStateNormal];
@@ -115,7 +115,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     
     
     UIButton *btnAddDevice = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnAddDevice setFrame:CGRectMake(0, 0, 22, 22)];
+    [btnAddDevice setFrame:CGRectMake(0, 0, 19.3, 25.3)];
 //    [btnAddDevice setTitle:@"+" forState:UIControlStateNormal];
     [btnAddDevice setBackgroundImage:[UIImage imageNamed:@"home_icon_01"] forState:UIControlStateNormal];
     [btnAddDevice addTarget:self action:@selector(addDevice) forControlEvents:UIControlEventTouchUpInside];
@@ -129,7 +129,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     [_indicator setHidden:YES];
     [_tableView setHidden:NO];
     NSLog(@"*****%f",self.view.frame.size.width);
-    _tableView.frame = CGRectMake(0, 205+56+40, self.view.frame.size.width, self.view.frame.size.height-200);
+    _tableView.frame = CGRectMake(0, 205+56+40+16, self.view.frame.size.width, self.view.frame.size.height-200);
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addLargeImageView];//新加的大图片
     [self addTwoLargeBtn];
@@ -148,38 +148,39 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 }
 -(void)addTwoLargeBtn
 {
-    UIView * backView = [[UIView alloc]initWithFrame:CGRectMake(0, largeImageBtn.frame.size.height, self.view.bounds.size.width, 56)];
+    UIView * backView = [[UIView alloc]initWithFrame:CGRectMake(0, largeImageBtn.frame.size.height, self.view.bounds.size.width, 64.5)];
+    backView.backgroundColor =  [UIColor colorWithRed:247.0 / 255.0 green:248.0/ 255.0 blue:248.0/255.0 alpha:alphaStage];
     [self.view addSubview:backView];
      UIButton *leftBtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    leftBtn.frame = CGRectMake(5, 5, (self.view.bounds.size.width-15)/2, 46);
-    [leftBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
+    leftBtn.frame = CGRectMake(7, 7, (self.view.bounds.size.width-15)/2, 50.7);
+    [leftBtn setImage:[UIImage imageNamed:@"greenbtn_left.png"] forState:UIControlStateNormal];
     [backView addSubview:leftBtn];
     
-    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 14, 18, 18)];
-    leftImage.image = [UIImage imageNamed:@"jikong.png"];
-   [leftBtn addSubview:leftImage];
-    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
-    leftLable.textColor = [UIColor whiteColor];
-    leftLable.text = @"监测开启";
-    leftLable.font = [UIFont fontWithName:@"Heiti SC" size:19];
-    [leftBtn addSubview:leftLable];
+//    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 14, 18, 18)];
+//    leftImage.image = [UIImage imageNamed:@"jikong.png"];
+//   [leftBtn addSubview:leftImage];
+//    UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
+//    leftLable.textColor = [UIColor whiteColor];
+//    leftLable.text = @"监测开启";
+//    leftLable.font = [UIFont fontWithName:@"Heiti SC" size:19];
+//    [leftBtn addSubview:leftLable];
 
     
 
     UIButton *rightBtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    rightBtn.frame = CGRectMake(10+ leftBtn.frame.size.width, 5, (self.view.bounds.size.width-15)/2, 46);
-    [rightBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
+    rightBtn.frame = CGRectMake(14+ leftBtn.frame.size.width, 7, leftBtn.frame.size.width-5.5, 50.7);
+    [rightBtn setImage:[UIImage imageNamed:@"greenbtn_right.png"] forState:UIControlStateNormal];
     [backView addSubview:rightBtn];
     
     
-    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 14, 18, 18)];
-    rightImage.image = [UIImage imageNamed:@"refresh.png"];
-    [rightBtn addSubview:rightImage];
-    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
-    rightLable.font = [UIFont fontWithName:@"Heiti SC" size:19];
-    rightLable.textColor = [UIColor whiteColor];
-    rightLable.text = @"刷新影像";
-    [rightBtn addSubview:rightLable];
+//    UIImageView * rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(45, 14, 18, 18)];
+//    rightImage.image = [UIImage imageNamed:@"refresh.png"];
+//    [rightBtn addSubview:rightImage];
+//    UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 26)];
+//    rightLable.font = [UIFont fontWithName:@"Heiti SC" size:19];
+//    rightLable.textColor = [UIColor whiteColor];
+//    rightLable.text = @"刷新影像";
+//    [rightBtn addSubview:rightLable];
 }
 -(void)addLargeImageView
 {
@@ -198,6 +199,11 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
      startbtn.frame = CGRectMake((largeImageBtn.bounds.size.width-58)/2, (largeImageBtn.bounds.size.height-58)/2, 58, 58);
     [startbtn setImage:[UIImage imageNamed:@"start"] forState:UIControlStateNormal];
     [largeImageBtn addSubview:startbtn];
+    
+    UIImageView * rightTopImage = [[UIImageView alloc]initWithFrame:CGRectMake(375.3, 15, 20, 12.7)];
+    rightTopImage.image = [UIImage imageNamed:@"eye.png"];
+    [self.view addSubview:rightTopImage];
+    
 }
 -(UIImage *)imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
@@ -303,14 +309,21 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     cell.delegate = self;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.timeLable.text = [_timeArrayList objectAtIndex:indexPath.row];
+    [cell.timeLable setTextColor:[UIColor colorWithRed:102.0 / 255.0 green:102.0/255.0 blue:102.0/255.0 alpha:alphaStage]];
+
 //    cell.dateLable.text = @"6月21日";
-    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:25];
+    cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:19];
     cell.PicImageView.layer.cornerRadius = 6;
     cell.PicImageView.layer.masksToBounds = YES;
     cell.picBtn.tag = indexPath.row;
     if (indexPath.row == 1) {
         cell.jingbaoImageView.image = [UIImage imageNamed:@"jingbaochudong.png"];
         cell.blachredImageview.image = [UIImage imageNamed:@"red.png"];
+        [cell.timeLable setTextColor:[UIColor colorWithRed:223.0 / 255.0 green:83.0/255.0 blue:97.0/255.0 alpha:alphaStage]];
+
+    }
+    if (indexPath.row >1) {
+        cell.blachredImageview.image = [UIImage imageNamed:@"balcktime.png"];
     }
     
     return cell;
@@ -335,7 +348,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    return 98;
-    return 180;
+    return 155;
 }
 
 
