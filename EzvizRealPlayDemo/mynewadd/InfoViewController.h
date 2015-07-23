@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface InfoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>
 
 @end
