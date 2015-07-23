@@ -93,24 +93,24 @@
 - (void)finishLoadImage
 {
     if(isHidden){
-//        bigImageView.image = [UIImage imageNamed:@"changepic.png"];
+        bigImageView.image = [UIImage imageNamed:@"changepic.png"];
         isHidden=NO;
 //        [self.view addSubview:myNavigationBar];
         //        myNavigationBar.hidden = NO;
 //        [self.view addSubview:backView];
-//        backView.hidden = NO;
+        backView.hidden = NO;
         
         
         //TODO
         
     }else{
-//        bigImageView.image = [UIImage imageNamed:@"pictrue.png"];
+        bigImageView.image = [UIImage imageNamed:@"pictrue.png"];
 
         isHidden=YES;
 //        [myNavigationBar removeFromSuperview];
         //        myNavigationBar.hidden = YES;
 //        [backView removeFromSuperview];
-//        backView.hidden = YES;
+        backView.hidden = YES;
 
     }
     
