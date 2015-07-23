@@ -31,9 +31,9 @@
 //    self.navigationItem.rightBarButtonItem = rightItem;
 //    self.view.backgroundColor = [UIColor redColor];
 //    NSLog(@"========%f=======%f",self.view.bounds.size.height,self.view.bounds.size.width);
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backpictrue.png"]];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backpictrue.png"]];
     
-  
+  self.view.backgroundColor = [UIColor blackColor];
 
     
     UIImageView *bigImageView = [[UIImageView alloc] init];
@@ -47,22 +47,22 @@
     [bigImageView addGestureRecognizer:singleTap];
     
     [self.view addSubview:bigImageView];
-    [self addTwoLargeBtn];
+//    [self addTwoLargeBtn];
     
-    UILabel * eventLable=[[UILabel alloc]initWithFrame:CGRectMake(10, 480, 140, 40)];
-    eventLable.backgroundColor=[UIColor clearColor];
-    eventLable.textColor=[UIColor whiteColor];
-    eventLable.textAlignment=NSTextAlignmentCenter;
-    eventLable.font=[UIFont fontWithName:@"Heiti TC" size:36];
-    eventLable.text=@"18:59:21";
-    [self.view addSubview:eventLable];
-    UILabel * eventLable1=[[UILabel alloc]initWithFrame:CGRectMake(10, 502, 90, 40)];
-    eventLable1.backgroundColor=[UIColor clearColor];
-    eventLable1.textColor=[UIColor whiteColor];
-    eventLable1.textAlignment=NSTextAlignmentCenter;
-    eventLable1.font=[UIFont fontWithName:@"Heiti TC" size:12];
-    eventLable1.text=@"2015年6月21日";
-    [self.view addSubview:eventLable1];
+//    UILabel * eventLable=[[UILabel alloc]initWithFrame:CGRectMake(10, 480, 140, 40)];
+//    eventLable.backgroundColor=[UIColor clearColor];
+//    eventLable.textColor=[UIColor whiteColor];
+//    eventLable.textAlignment=NSTextAlignmentCenter;
+//    eventLable.font=[UIFont fontWithName:@"Heiti TC" size:36];
+//    eventLable.text=@"18:59:21";
+//    [self.view addSubview:eventLable];
+//    UILabel * eventLable1=[[UILabel alloc]initWithFrame:CGRectMake(10, 502, 90, 40)];
+//    eventLable1.backgroundColor=[UIColor clearColor];
+//    eventLable1.textColor=[UIColor whiteColor];
+//    eventLable1.textAlignment=NSTextAlignmentCenter;
+//    eventLable1.font=[UIFont fontWithName:@"Heiti TC" size:12];
+//    eventLable1.text=@"2015年6月21日";
+//    [self.view addSubview:eventLable1];
     
     MyNavigationBar * myNavigationBar=[[MyNavigationBar alloc]init];
     myNavigationBar.frame=CGRectMake(0, 20, self.view.bounds.size.width, 44);
