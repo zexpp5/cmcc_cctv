@@ -31,8 +31,7 @@
 
     [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    
-    
+ 
 //    self.navigationItem.title = @"报警消息";
     
     
@@ -87,16 +86,24 @@
     
     
     section_arr1=[[NSMutableArray alloc]initWithObjects:@"19:59:21",@"19:32:21",@"19:23:21",@"16:56:08",@"16:32:02",@"15:23:29",nil];
+    UIPanGestureRecognizer * pan=[[UIPanGestureRecognizer alloc]init];
+    [pan addTarget:self action:@selector(pan:)];
+//    [self.view addGestureRecognizer:pan];
     
     // Do any additional setup after loading the view.
 }
-
+-(void)pan:(UIPanGestureRecognizer *)sender
+{
+    [self.navigationController popViewControllerAnimated:NO];
+}
 -(void)qingli
 {
 
 }
 -(void)viewWillAppear:(BOOL)animated
 {
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 
 }
 -(UIImage *)imageWithColor:(UIColor *)color {
