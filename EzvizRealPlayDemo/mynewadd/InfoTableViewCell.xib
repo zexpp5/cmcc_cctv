@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -17,41 +17,39 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NtU-uf-wgN">
                         <rect key="frame" x="150" y="5" width="261" height="160"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-cY-ZKs">
-                        <rect key="frame" x="3" y="0.0" width="103" height="30"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="徐大鹏的卧室" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF4-TC-BIK">
                         <rect key="frame" x="3" y="27" width="103" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baojingxiaoxi.png" translatesAutoresizingMaskIntoConstraints="NO" id="ria-sI-rvq">
-                        <rect key="frame" x="114" y="3" width="24" height="24"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline1.png" translatesAutoresizingMaskIntoConstraints="NO" id="fya-ws-eGw">
-                        <rect key="frame" x="125" y="27" width="1" height="140"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="black.png" translatesAutoresizingMaskIntoConstraints="NO" id="ria-sI-rvq">
+                        <rect key="frame" x="3" y="5" width="24" height="24"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color.png" translatesAutoresizingMaskIntoConstraints="NO" id="kea-qy-BUn">
                         <rect key="frame" x="150" y="91" width="261" height="73"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-cY-ZKs">
+                        <rect key="frame" x="39" y="0.0" width="103" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="bigImage" destination="NtU-uf-wgN" id="EO9-rC-eST"/>
+                <outlet property="blakBackgroundIMage" destination="kea-qy-BUn" id="4UZ-vJ-862"/>
                 <outlet property="nameLable" destination="MF4-TC-BIK" id="TV8-g7-Tl2"/>
+                <outlet property="smallImage" destination="ria-sI-rvq" id="tlI-UD-eqh"/>
                 <outlet property="timeLable" destination="IiD-cY-ZKs" id="yAo-38-iDK"/>
             </connections>
             <point key="canvasLocation" x="289.5" y="299.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="baojingxiaoxi.png" width="74" height="74"/>
+        <image name="black.png" width="74" height="74"/>
         <image name="color.png" width="1242" height="425"/>
         <image name="pic.jpg" width="1024" height="690"/>
-        <image name="timeline1.png" width="3" height="406"/>
     </resources>
 </document>

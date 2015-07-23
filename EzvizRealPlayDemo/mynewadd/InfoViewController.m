@@ -175,6 +175,13 @@
     cell.timeLable.text = [section_arr1 objectAtIndex:indexPath.row];
     cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:25];
     cell.nameLable.font = [UIFont fontWithName:@"Heiti SC" size:16];
+    cell.bigImage.layer.cornerRadius = 6;
+    cell.bigImage.layer.masksToBounds = YES;
+    cell.blakBackgroundIMage.layer.cornerRadius = 6;
+    cell.blakBackgroundIMage.layer.masksToBounds = YES;
+    if (indexPath.row == 1 ) {
+        cell.smallImage.image = [UIImage imageNamed:@"baojingxiaoxi.png"];
+    }
 
        return cell;
     

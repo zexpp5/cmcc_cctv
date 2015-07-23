@@ -12,6 +12,8 @@
 @property (retain, nonatomic) IBOutlet UILabel *infoLable;
 @property (retain, nonatomic) IBOutlet UILabel *timeLable;
 @property (retain, nonatomic) IBOutlet UILabel *nameLable;
+@property (retain, nonatomic) IBOutlet UIImageView *smallImage;
+@property (retain, nonatomic) IBOutlet UIImageView *blakBackgroundIMage;
 
 @property (retain, nonatomic) IBOutlet UIImageView *bigImage;
 @end

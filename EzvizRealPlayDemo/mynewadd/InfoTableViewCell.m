@@ -25,6 +25,8 @@
     [_infoLable release];
     [_timeLable release];
     [_nameLable release];
+    [_smallImage release];
+    [_blakBackgroundIMage release];
     [super dealloc];
 }
 @end

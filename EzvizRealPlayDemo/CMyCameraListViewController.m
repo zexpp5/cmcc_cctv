@@ -305,8 +305,8 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
     cell.timeLable.text = [_timeArrayList objectAtIndex:indexPath.row];
 //    cell.dateLable.text = @"6月21日";
     cell.timeLable.font = [UIFont fontWithName:@"Heiti SC" size:25];
-
-
+    cell.PicImageView.layer.cornerRadius = 6;
+    cell.PicImageView.layer.masksToBounds = YES;
     cell.picBtn.tag = indexPath.row;
     if (indexPath.row == 1) {
         cell.jingbaoImageView.image = [UIImage imageNamed:@"jingbaochudong.png"];
