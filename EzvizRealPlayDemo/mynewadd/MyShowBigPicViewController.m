@@ -47,7 +47,7 @@
     [bigImageView addGestureRecognizer:singleTap];
     
     [self.view addSubview:bigImageView];
-//    [self addTwoLargeBtn];
+    [self addTwoLargeBtn];
     
 //    UILabel * eventLable=[[UILabel alloc]initWithFrame:CGRectMake(10, 480, 140, 40)];
 //    eventLable.backgroundColor=[UIColor clearColor];
@@ -66,7 +66,7 @@
     
     MyNavigationBar * myNavigationBar=[[MyNavigationBar alloc]init];
     myNavigationBar.frame=CGRectMake(0, 20, self.view.bounds.size.width, 44);
-    [myNavigationBar   createMyNavigationBarWithBackGroundImage:@"" andTitle:@"实时影像" andTitleImageName:@"" andLeftBBIImageName:@"back.png" andRightBBIImageName:@"" andClass:self andSEL:@selector(backClick)];
+    [myNavigationBar   createMyNavigationBarWithBackGroundImage:@"" andTitle:@"报警消息" andTitleImageName:@"" andLeftBBIImageName:@"back.png" andRightBBIImageName:@"" andClass:self andSEL:@selector(backClick)];
     
     [self.view addSubview:myNavigationBar];
 
@@ -98,15 +98,15 @@
     UIView * backView = [[UIView alloc]initWithFrame:CGRectMake(0, largeImageBtn.frame.size.height, self.view.bounds.size.width, 56)];
     [self.view addSubview:backView];
     UIButton *leftBtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    leftBtn.frame = CGRectMake(5, self.view.bounds.size.height-51, (self.view.bounds.size.width-15)/2, 46);
+    leftBtn.frame = CGRectMake(5, self.view.bounds.size.height-51, (self.view.bounds.size.width-15)/2-2, 46);
     [leftBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
     [backView addSubview:leftBtn];
     
-    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(55, 14, 21.6, 18)];
+    UIImageView * leftImage = [[UIImageView alloc]initWithFrame:CGRectMake(55, 14, 20, 18)];
     leftImage.image = [UIImage imageNamed:@"cloud.png"];
     [leftBtn addSubview:leftImage];
     UILabel * leftLable = [[UILabel alloc]initWithFrame:CGRectMake(80, 10, 80, 26)];
-    leftLable.font = [UIFont systemFontOfSize:19];
+    leftLable.font = [UIFont systemFontOfSize:15];
     leftLable.textColor = [UIColor whiteColor];
     leftLable.text = @"云存储";
     [leftBtn addSubview:leftLable];
@@ -114,7 +114,7 @@
     
     
     UIButton *rightBtn =[UIButton buttonWithType:UIButtonTypeCustom];
-    rightBtn.frame = CGRectMake(10+ leftBtn.frame.size.width, self.view.bounds.size.height-51, (self.view.bounds.size.width-15)/2, 46);
+    rightBtn.frame = CGRectMake(10+ leftBtn.frame.size.width+2, self.view.bounds.size.height-51, (self.view.bounds.size.width-15)/2, 46);
     [rightBtn setImage:[UIImage imageNamed:@"greenbtn.png"] forState:UIControlStateNormal];
     [backView addSubview:rightBtn];
     
@@ -123,7 +123,7 @@
     rightImage.image = [UIImage imageNamed:@"delete.png"];
     [rightBtn addSubview:rightImage];
     UILabel * rightLable = [[UILabel alloc]initWithFrame:CGRectMake(90, 10, 80, 26)];
-    rightLable.font = [UIFont systemFontOfSize:19];
+    rightLable.font = [UIFont systemFontOfSize:15];
     rightLable.textColor = [UIColor whiteColor];
     rightLable.text = @"删除";
     [rightBtn addSubview:rightLable];

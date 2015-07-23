@@ -115,6 +115,7 @@
 		DADBE8F61B60CBC9000E2192 /* balcktime.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8F51B60CBC9000E2192 /* balcktime.png */; };
 		DADBE8F91B60DF28000E2192 /* picture1.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8F71B60DF28000E2192 /* picture1.png */; };
 		DADBE8FA1B60DF28000E2192 /* picture11.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8F81B60DF28000E2192 /* picture11.png */; };
+		DADBE8FC1B60E8A3000E2192 /* changepic.png in Resources */ = {isa = PBXBuildFile; fileRef = DADBE8FB1B60E8A3000E2192 /* changepic.png */; };
 		E30338431991019F00029175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30338421991019F00029175 /* Images.xcassets */; };
 		E310DEF419F79D410091B10E /* YSShowDeviceCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E310DEF219F79D410091B10E /* YSShowDeviceCaptureViewController.m */; };
 		E310DEF519F79D410091B10E /* YSShowDeviceCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E310DEF319F79D410091B10E /* YSShowDeviceCaptureViewController.xib */; };
@@ -405,6 +406,7 @@
 		DADBE8F51B60CBC9000E2192 /* balcktime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balcktime.png; sourceTree = "<group>"; };
 		DADBE8F71B60DF28000E2192 /* picture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture1.png; sourceTree = "<group>"; };
 		DADBE8F81B60DF28000E2192 /* picture11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture11.png; sourceTree = "<group>"; };
+		DADBE8FB1B60E8A3000E2192 /* changepic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changepic.png; sourceTree = "<group>"; };
 		E30338421991019F00029175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E310DEF119F79D410091B10E /* YSShowDeviceCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSShowDeviceCaptureViewController.h; sourceTree = "<group>"; };
 		E310DEF219F79D410091B10E /* YSShowDeviceCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSShowDeviceCaptureViewController.m; sourceTree = "<group>"; };
@@ -878,6 +880,7 @@
 		D55F15BB1B4A287500EEF122 /* mynewadd */ = {
 			isa = PBXGroup;
 			children = (
+				DADBE8FB1B60E8A3000E2192 /* changepic.png */,
 				DADBE8F71B60DF28000E2192 /* picture1.png */,
 				DADBE8F81B60DF28000E2192 /* picture11.png */,
 				DADBE8F51B60CBC9000E2192 /* balcktime.png */,
@@ -1258,6 +1261,7 @@
 				E334ADBE1988A01000233190 /* balanced.png in Resources */,
 				E371CADE1A20386500BA9049 /* button_red_sel.png in Resources */,
 				8CC28D38197BFCE80004BD81 /* pb_timebar_hour.jpg in Resources */,
+				DADBE8FC1B60E8A3000E2192 /* changepic.png in Resources */,
 				E361E4F41A35BB6C00974327 /* YSCheckSMSCodeViewController.xib in Resources */,
 				DA7375911B52B085008CADF5 /* sound.png in Resources */,
 				E361E50F1A36CD4900974327 /* ptz_left_sel.png in Resources */,

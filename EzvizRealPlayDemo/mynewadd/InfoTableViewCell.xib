@@ -18,19 +18,19 @@
                         <rect key="frame" x="143" y="5" width="259" height="146"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="徐大鹏的卧室" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF4-TC-BIK">
-                        <rect key="frame" x="10" y="27" width="103" height="21"/>
+                        <rect key="frame" x="13" y="27" width="103" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balcktime.png" translatesAutoresizingMaskIntoConstraints="NO" id="ria-sI-rvq">
-                        <rect key="frame" x="10" y="8" width="15" height="15"/>
+                        <rect key="frame" x="13" y="8" width="15" height="15"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="color.png" translatesAutoresizingMaskIntoConstraints="NO" id="kea-qy-BUn">
                         <rect key="frame" x="143" y="91" width="250" height="60"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-cY-ZKs">
-                        <rect key="frame" x="30" y="1" width="103" height="30"/>
+                        <rect key="frame" x="31" y="1" width="103" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
