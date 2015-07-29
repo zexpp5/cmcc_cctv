@@ -189,7 +189,7 @@ UITableViewDelegate, UIAlertViewDelegate,MyPicListCellDelegate>
 //    [largeImageBtn setTitle:@"直播" forState:UIControlStateNormal];
     largeImageBtn.backgroundColor = [UIColor grayColor];
 //    [largeImageBtn addTarget:self action:@selector(oneTapView) forControlEvents:UIControlEventTouchUpInside];
-    [largeImageBtn setImage:[UIImage imageNamed:@"pictrue.png"] forState:UIControlStateNormal];
+    [largeImageBtn setImage:[UIImage imageNamed:@"first.jpg"] forState:UIControlStateNormal];
 
     [self.view addSubview:largeImageBtn];
     
